@@ -1,6 +1,8 @@
 "use client";
+import { useState } from "react";
 
 export default function Home() {
+  const [submitted, setSubmitted] = useState(false);
   return (
     <main className="min-h-screen bg-white text-gray-900">
       {/* NAVBAR */}
@@ -68,7 +70,7 @@ export default function Home() {
       {/* TRUST / CREDENTIALS */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-2xl text-black-900 mb-8">
+          <h3 className="text-2xl font-bold mb-6">  
             Trusted Infrastructure & Experience
           </h3>
 
@@ -105,86 +107,79 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* PRODUCT */}
-<section id="product" className="py-28 px-6 bg-white">
-  <div className="max-w-6xl mx-auto">
+      {/* PRODUCT */}
+      <section id="product" className="py-28 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="h-px bg-gray-200 mb-12" />
 
-    <div className="h-px bg-gray-200 mb-12" />
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* LEFT SIDE */}
+            <div>
+              <h3 className="text-4xl font-bold mb-6">
+                A Complete Platform for Bankruptcy Case Management
+              </h3>
 
-    <div className="grid md:grid-cols-2 gap-16 items-center">
+              <p className="text-gray-600 mb-8">
+                Bankruptcy Control provides a centralized system for managing
+                bankrupt accounts, tracking claims, ensuring compliance, and
+                integrating with key data sources.
+              </p>
 
-      {/* LEFT SIDE */}
-      <div>
-        <h3 className="text-4xl font-bold mb-6">
-          A Complete Platform for Bankruptcy Case Management
-        </h3>
+              {/* FEATURES */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                <div className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✔</span>
+                  <p className="font-medium">Automated document generation</p>
+                </div>
 
-        <p className="text-gray-600 mb-8">
-          Bankruptcy Control provides a centralized system for managing
-          bankrupt accounts, tracking claims, ensuring compliance, and
-          integrating with key data sources.
-        </p>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✔</span>
+                  <p className="font-medium">Real-time bankruptcy tracking</p>
+                </div>
 
-        {/* FEATURES */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                <div className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✔</span>
+                  <p className="font-medium">System integrations</p>
+                </div>
 
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-1">✔</span>
-            <p className="font-medium">Automated document generation</p>
-          </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✔</span>
+                  <p className="font-medium">Workflow management tools</p>
+                </div>
+              </div>
+            </div>
 
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-1">✔</span>
-            <p className="font-medium">Real-time bankruptcy tracking</p>
-          </div>
+            {/* RIGHT SIDE */}
+            <div className="bg-gray-900 rounded-xl shadow-lg h-72 p-6 text-white">
+              <p className="text-sm text-gray-400 mb-4">
+                Bankruptcy Control Dashboard
+              </p>
 
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-1">✔</span>
-            <p className="font-medium">System integrations</p>
-          </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-800 p-4 rounded">
+                  <p className="text-xs text-gray-400">Active Cases</p>
+                  <p className="text-2xl font-bold">1,248</p>
+                </div>
 
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-1">✔</span>
-            <p className="font-medium">Workflow management tools</p>
-          </div>
+                <div className="bg-gray-800 p-4 rounded">
+                  <p className="text-xs text-gray-400">Claims Filed</p>
+                  <p className="text-2xl font-bold">3,912</p>
+                </div>
 
-        </div>
-      </div>
+                <div className="bg-gray-800 p-4 rounded">
+                  <p className="text-xs text-gray-400">Compliance Alerts</p>
+                  <p className="text-2xl font-bold text-yellow-400">12</p>
+                </div>
 
-      {/* RIGHT SIDE */}
-      <div className="bg-gray-900 rounded-xl shadow-lg h-72 p-6 text-white">
-
-        <p className="text-sm text-gray-400 mb-4">
-          Bankruptcy Control Dashboard
-        </p>
-
-        <div className="grid grid-cols-2 gap-4">
-          <div className="bg-gray-800 p-4 rounded">
-            <p className="text-xs text-gray-400">Active Cases</p>
-            <p className="text-2xl font-bold">1,248</p>
-          </div>
-
-          <div className="bg-gray-800 p-4 rounded">
-            <p className="text-xs text-gray-400">Claims Filed</p>
-            <p className="text-2xl font-bold">3,912</p>
-          </div>
-
-          <div className="bg-gray-800 p-4 rounded">
-            <p className="text-xs text-gray-400">Compliance Alerts</p>
-            <p className="text-2xl font-bold text-yellow-400">12</p>
-          </div>
-
-          <div className="bg-gray-800 p-4 rounded">
-            <p className="text-xs text-gray-400">Payments Tracked</p>
-            <p className="text-2xl font-bold text-green-400">$2.4M</p>
+                <div className="bg-gray-800 p-4 rounded">
+                  <p className="text-xs text-gray-400">Payments Tracked</p>
+                  <p className="text-2xl font-bold text-green-400">$2.4M</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* ABOUT (TAKE CONTROL) */}
       <section id="about" className="py-24 px-6 bg-gray-50">
@@ -235,21 +230,21 @@ export default function Home() {
           <div className="space-y-6">
             <div>
               <h4 className="font-semibold">What is Bankruptcy Control?</h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-lg">
                 A platform for managing bankruptcy accounts and compliance.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold">Who is it for?</h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-lg">
                 Creditors, servicers, attorneys, and debt buyers.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold">Is it cloud-based?</h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-lg">
                 Yes, accessible via modern web browsers.
               </p>
             </div>
@@ -270,10 +265,15 @@ export default function Home() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              alert("Demo request submitted (frontend only)");
+              setSubmitted(true);
             }}
             className="space-y-4 text-left"
           >
+            {submitted && (
+              <p className="text-green-600 mt-4 text-center font-medium">
+                Thank you! We’ll be in touch shortly.
+              </p>
+            )}
             <input
               type="text"
               placeholder="Full Name"
@@ -311,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center text-sm text-gray-500 py-6 border-t">
+      <footer className="text-center text-lg text-blue-900 py-6 border-t">
         © {new Date().getFullYear()} Bankruptcy & Litigation Technology, Inc.
       </footer>
     </main>
