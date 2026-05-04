@@ -83,7 +83,7 @@ export default function Home() {
 
             {/* Experience */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">20+</div>
+              <div className="text-4xl font-bold text-blue-700">35+</div>
               <p className="text-xl text-black-700 mt-2">
                 Years Creditor Representation
               </p>
