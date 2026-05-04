@@ -51,9 +51,12 @@ export default function Home() {
               attorneys.
             </p>
 
-            <button className="bg-white text-blue-900 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">
+            <a
+              href="#contact"
+              className="inline-block bg-white text-blue-900 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition"
+            >
               Schedule a Demo →
-            </button>
+            </a>
           </div>
 
           <div className="bg-white/10 rounded-lg h-72 flex items-center justify-center text-lg">
@@ -102,36 +105,86 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* PRODUCT */}
+<section id="product" className="py-28 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
 
-      {/* PRODUCT */}
-      <section id="product" className="py-28 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="h-px bg-gray-200 mb-12" />
+    <div className="h-px bg-gray-200 mb-12" />
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <h3 className="text-4xl font-bold mb-6">
-              A Complete Platform for Bankruptcy Case Management
-            </h3>
+    <div className="grid md:grid-cols-2 gap-16 items-center">
 
-            <p className="text-gray-600 mb-6">
-              Bankruptcy Control provides a centralized system for managing
-              bankrupt accounts, tracking claims, ensuring compliance, and
-              integrating with key data sources.
-            </p>
+      {/* LEFT SIDE */}
+      <div>
+        <h3 className="text-4xl font-bold mb-6">
+          A Complete Platform for Bankruptcy Case Management
+        </h3>
 
-            <ul className="space-y-3 text-gray-700">
-              <li>✔ Automated document generation</li>
-              <li>✔ Real-time bankruptcy tracking</li>
-              <li>✔ System integrations</li>
-              <li>✔ Workflow management tools</li>
-            </ul>
+        <p className="text-gray-600 mb-8">
+          Bankruptcy Control provides a centralized system for managing
+          bankrupt accounts, tracking claims, ensuring compliance, and
+          integrating with key data sources.
+        </p>
+
+        {/* FEATURES */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+
+          <div className="flex items-start gap-2">
+            <span className="text-green-500 mt-1">✔</span>
+            <p className="font-medium">Automated document generation</p>
           </div>
 
-          <div className="bg-gray-100 rounded-lg h-72 flex items-center justify-center">
-            Platform Screenshot
+          <div className="flex items-start gap-2">
+            <span className="text-green-500 mt-1">✔</span>
+            <p className="font-medium">Real-time bankruptcy tracking</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <span className="text-green-500 mt-1">✔</span>
+            <p className="font-medium">System integrations</p>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <span className="text-green-500 mt-1">✔</span>
+            <p className="font-medium">Workflow management tools</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="bg-gray-900 rounded-xl shadow-lg h-72 p-6 text-white">
+
+        <p className="text-sm text-gray-400 mb-4">
+          Bankruptcy Control Dashboard
+        </p>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div className="bg-gray-800 p-4 rounded">
+            <p className="text-xs text-gray-400">Active Cases</p>
+            <p className="text-2xl font-bold">1,248</p>
+          </div>
+
+          <div className="bg-gray-800 p-4 rounded">
+            <p className="text-xs text-gray-400">Claims Filed</p>
+            <p className="text-2xl font-bold">3,912</p>
+          </div>
+
+          <div className="bg-gray-800 p-4 rounded">
+            <p className="text-xs text-gray-400">Compliance Alerts</p>
+            <p className="text-2xl font-bold text-yellow-400">12</p>
+          </div>
+
+          <div className="bg-gray-800 p-4 rounded">
+            <p className="text-xs text-gray-400">Payments Tracked</p>
+            <p className="text-2xl font-bold text-green-400">$2.4M</p>
           </div>
         </div>
-      </section>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ABOUT (TAKE CONTROL) */}
       <section id="about" className="py-24 px-6 bg-gray-50">
