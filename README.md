@@ -84,7 +84,6 @@ jwhlaw-site/
 - The "Request a Demo" form is a placeholder and not yet connected to a backend service.
 - Next.js Dev Tools may appear in development mode (bottom-right corner). This is expected and does not appear in production.
 
-
 ---
 
 ## Future Enhancements
