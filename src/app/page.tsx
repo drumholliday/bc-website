@@ -67,46 +67,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST / CREDENTIALS */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-6">  
-            Trusted Infrastructure & Experience
-          </h3>
-
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {/* Veteran Owned */}
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">✔</div>
-              <p className="text-xl text-black-700 mt-2">
-                Veteran Owned Business
-              </p>
-            </div>
-
-            {/* Experience */}
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">35+</div>
-              <p className="text-xl text-black-700 mt-2">
-                Years Creditor Representation
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">20+</div>
-              <p className="text-xl text-black-700 mt-2">
-                Years Platform Development
-              </p>
-            </div>
-            {/* AWS Hosting */}
-            <div className="text-center">
-              <div className="text-4xl font-bold text-amber-400">AWS</div>
-              <p className="text-xl text-black-700 mt-2">
-                Hosted on AWS Infrastructure
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* PRODUCT */}
       <section id="product" className="py-28 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -214,6 +174,47 @@ export default function Home() {
               <h4 className="font-semibold mb-2">Improve Collections</h4>
               <p className="text-gray-600 text-lg">
                 Track claims and payments efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST / CREDENTIALS */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-2xl font-bold mb-6">
+            Trusted Infrastructure & Experience
+          </h3>
+
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {/* Veteran Owned */}
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-700">✔</div>
+              <p className="text-xl text-black-700 mt-2">
+                Veteran Owned Business
+              </p>
+            </div>
+
+            {/* Experience */}
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-700">35+</div>
+              <p className="text-xl text-black-700 mt-2">
+                Years Creditor Representation
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-700">20+</div>
+              <p className="text-xl text-black-700 mt-2">
+                Years Platform Development
+              </p>
+            </div>
+            {/* AWS Hosting */}
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400">AWS</div>
+              <p className="text-xl text-black-700 mt-2">
+                Hosted on AWS Infrastructure
               </p>
             </div>
           </div>
