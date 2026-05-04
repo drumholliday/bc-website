@@ -1,9 +1,13 @@
+"use client";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       {/* NAVBAR */}
-      <nav className="flex justify-between items-center px-8 py-5 border-b shadow-sm">
-        <h1 className="text-2xl font-bold">Bankruptcy Control</h1>
+      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm flex justify-between items-center px-8 py-5">
+        <h1 className="text-2xl font-bold tracking-tight">
+          Bankruptcy Control
+        </h1>
 
         <div className="space-x-6 text-lg font-medium flex items-center">
           <a href="#home" className="hover:text-blue-700 transition">
@@ -21,7 +25,11 @@ export default function Home() {
 
           {/* Client Login */}
           <a
-            href="https://your-aws-app-url.com"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              alert("Client login coming soon");
+            }}
             className="text-gray-500 hover:text-gray-900 ml-4"
           >
             Client Login
@@ -37,13 +45,14 @@ export default function Home() {
               Bankruptcy Case Management for Creditors
             </h2>
 
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="text-xl text-gray-200 mb-8 max-w-xl">
               Automate compliance, track claims, and manage bankruptcy accounts
-              with a platform built for creditors, servicers, and attorneys.
+              with a secure platform built for creditors, servicers, and
+              attorneys.
             </p>
 
             <button className="bg-white text-blue-900 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">
-              Request a Demo
+              Schedule a Demo →
             </button>
           </div>
 
@@ -56,38 +65,38 @@ export default function Home() {
       {/* TRUST / CREDENTIALS */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-xl text-blue-900 mb-8">
+          <h3 className="text-2xl text-black-900 mb-8">
             Trusted Infrastructure & Experience
           </h3>
 
           <div className="flex flex-wrap justify-center items-center gap-12">
-            {/* AWS Hosting */}
+            {/* Veteran Owned */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-amber-400">AWS</div>
-              <p className="text-sm text-amber-700 mt-2">
-                Hosted on AWS Infrastructure
+              <div className="text-4xl font-bold text-blue-700">✔</div>
+              <p className="text-xl text-black-700 mt-2">
+                Veteran Owned Business
               </p>
             </div>
 
             {/* Experience */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-gray-900">20+</div>
-              <p className="text-sm text-amber-700 mt-2">
+              <div className="text-4xl font-bold text-blue-700">20+</div>
+              <p className="text-xl text-black-700 mt-2">
                 Years Creditor Representation
               </p>
             </div>
 
             <div className="text-center">
-              <div className="text-4xl font-bold text-gray-900">20+</div>
-              <p className="text-sm text-amber-700 mt-2">
+              <div className="text-4xl font-bold text-blue-700">20+</div>
+              <p className="text-xl text-black-700 mt-2">
                 Years Platform Development
               </p>
             </div>
-            {/* Veteran Owned */}
+            {/* AWS Hosting */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">✔</div>
-              <p className="text-sm text-amber-700 mt-2">
-                Veteran Owned Business
+              <div className="text-4xl font-bold text-amber-400">AWS</div>
+              <p className="text-xl text-black-700 mt-2">
+                Hosted on AWS Infrastructure
               </p>
             </div>
           </div>
@@ -96,8 +105,10 @@ export default function Home() {
 
       {/* PRODUCT */}
       <section id="product" className="py-28 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div>
+        <div className="max-w-6xl mx-auto">
+          <div className="h-px bg-gray-200 mb-12" />
+
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <h3 className="text-4xl font-bold mb-6">
               A Complete Platform for Bankruptcy Case Management
             </h3>
@@ -190,6 +201,59 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* DEMO REQUEST */}
+      <section id="contact" className="py-24 px-6 bg-gray-50">
+        <div className="max-w-3xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-6">Schedule a Demo</h3>
+
+          <p className="text-gray-600 mb-10">
+            See how Bankruptcy Control can streamline your bankruptcy
+            operations.
+          </p>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Demo request submitted (frontend only)");
+            }}
+            className="space-y-4 text-left"
+          >
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="w-full border rounded px-4 py-3"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="w-full border rounded px-4 py-3"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Company"
+              className="w-full border rounded px-4 py-3"
+            />
+
+            <textarea
+              placeholder="Tell us about your needs..."
+              className="w-full border rounded px-4 py-3"
+              rows={4}
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-blue-900 text-white py-3 rounded font-semibold hover:bg-blue-800 transition"
+            >
+              Request Demo
+            </button>
+          </form>
         </div>
       </section>
 
