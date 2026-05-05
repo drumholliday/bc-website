@@ -4,14 +4,14 @@ import { useState } from "react";
 export default function Home() {
   const [submitted, setSubmitted] = useState(false);
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm flex justify-between items-center px-8 py-5">
-        <h1 className="text-2xl font-bold tracking-tight">
+      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm flex flex-wrap justify-between items-center px-4 md:px-8 py-4">
+        <h1 className="text-2xl font-bold tracking-tight mb-2 md:mb-0">
           Bankruptcy Control
         </h1>
 
-        <div className="space-x-6 text-lg font-medium flex items-center">
+        <div className="flex flex-wrap gap-4 md:gap-6 text-base md:text-lg font-medium items-center">
           <a href="#home" className="hover:text-blue-700 transition">
             Home
           </a>
@@ -20,6 +20,12 @@ export default function Home() {
           </a>
           <a href="#about" className="hover:text-blue-700 transition">
             About
+          </a>
+          <a href="#trust" className="hover:text-blue-700 transition">
+            Trusted
+          </a>
+          <a href="#faq" className="hover:text-blue-700 transition">
+            FAQ
           </a>
           <a href="#contact" className="hover:text-blue-700 transition">
             Contact
@@ -40,14 +46,17 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="home" className="bg-blue-900 text-white py-28 px-6">
+      <section
+        id="home"
+        className="scroll-mt-24 bg-blue-900 text-white py-16 md:py-28 px-4 md:px-6"
+      >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-5xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Bankruptcy Case Management for Creditors
             </h2>
 
-            <p className="text-xl text-gray-200 mb-8 max-w-xl">
+            <p className="text-base md:text-xl text-gray-200 mb-8 max-w-xl">
               Automate compliance, track claims, and manage bankruptcy accounts
               with a secure platform built for creditors, servicers, and
               attorneys.
@@ -61,21 +70,24 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="bg-white/10 rounded-lg h-72 flex items-center justify-center text-lg">
+          <div className="bg-white/10 rounded-lg min-h-[200px] md:min-h-[280px] flex items-center justify-center text-base md:text-lg">
             Platform Preview
           </div>
         </div>
       </section>
 
       {/* PRODUCT */}
-      <section id="product" className="py-28 px-6 bg-white">
+      <section
+        id="product"
+        className="scroll-mt-24 py-16 md:py-28 px-4 md:px-6 bg-white"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="h-px bg-gray-200 mb-12" />
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* LEFT SIDE */}
             <div>
-              <h3 className="text-4xl font-bold mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">
                 A Complete Platform for Bankruptcy Case Management
               </h3>
 
@@ -110,7 +122,7 @@ export default function Home() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="bg-gray-900 rounded-xl shadow-lg h-72 p-6 text-white">
+            <div className="bg-gray-900 rounded-xl shadow-lg p-6 text-white">
               <p className="text-sm text-gray-400 mb-4">
                 Bankruptcy Control Dashboard
               </p>
@@ -142,13 +154,16 @@ export default function Home() {
       </section>
 
       {/* ABOUT (TAKE CONTROL) */}
-      <section id="about" className="py-24 px-6 bg-gray-50">
+      <section
+        id="about"
+        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-gray-50"
+      >
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-4xl font-bold mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold mb-12">
             Take Control of Bankruptcy Accounts
           </h3>
 
-          <div className="grid md:grid-cols-4 gap-8 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
             <div className="p-6 bg-white rounded-lg shadow-sm">
               <h4 className="font-semibold mb-2">Reduce Legal Risk</h4>
               <p className="text-gray-600 text-lg">
@@ -181,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* TRUST / CREDENTIALS */}
-      <section className="py-16 px-6 bg-white">
+      <section id="trust" className="scroll-mt-24 py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-2xl font-bold mb-6">
             Trusted Infrastructure & Experience
@@ -190,30 +205,38 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-12">
             {/* Veteran Owned */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">✔</div>
-              <p className="text-xl text-black-700 mt-2">
+              <div className="text-3xl md:text-4xl font-bold text-blue-700">
+                ✔
+              </div>
+              <p className="text-xl text-gray-700 mt-2">
                 Veteran Owned Business
               </p>
             </div>
 
             {/* Experience */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">35+</div>
-              <p className="text-xl text-black-700 mt-2">
+              <div className="text-3xl md:text-4xl font-bold text-blue-700">
+                35+
+              </div>
+              <p className="text-xl text-gray-700 mt-2">
                 Years Creditor Representation
               </p>
             </div>
 
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-700">20+</div>
-              <p className="text-xl text-black-700 mt-2">
+              <div className="text-3xl md:text-4xl font-bold text-blue-700">
+                20+
+              </div>
+              <p className="text-xl text-gray-700 mt-2">
                 Years Platform Development
               </p>
             </div>
             {/* AWS Hosting */}
             <div className="text-center">
-              <div className="text-4xl font-bold text-amber-400">AWS</div>
-              <p className="text-xl text-black-700 mt-2">
+              <div className="text-3xl md:text-4xl font-bold text-amber-400">
+                AWS
+              </div>
+              <p className="text-xl text-gray-700 mt-2">
                 Hosted on AWS Infrastructure
               </p>
             </div>
@@ -222,9 +245,12 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="contact" className="py-24 px-6 bg-white">
+      <section
+        id="faq"
+        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-white"
+      >
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-4xl font-bold mb-10 text-center">
+          <h3 className="text-3xl md:text-4xl font-bold mb-10 text-center">
             Frequently Asked Questions
           </h3>
 
@@ -254,9 +280,14 @@ export default function Home() {
       </section>
 
       {/* DEMO REQUEST */}
-      <section id="contact" className="py-24 px-6 bg-gray-50">
+      <section
+        id="contact"
+        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-gray-50"
+      >
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-4xl font-bold mb-6">Schedule a Demo</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-6">
+            Schedule a Demo
+          </h3>
 
           <p className="text-gray-600 mb-10">
             See how Bankruptcy Control can streamline your bankruptcy
@@ -312,7 +343,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center text-lg text-blue-900 py-6 border-t">
+      <footer className="text-center text-sm md:text-lg text-blue-900 py-6 border-t">
         © {new Date().getFullYear()} Bankruptcy & Litigation Technology, Inc.
       </footer>
     </main>
