@@ -70,19 +70,12 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="bg-white/10 rounded-lg min-h-[200px] md:min-h-[280px] p-6 text-white font-mono text-sm md:text-base">
-            <p className="text-gray-300 mb-2">
-              $ Loading bankruptcy case data...
-            </p>
-            <p className="text-gray-300 mb-2">
-              $ Connecting to court systems...
-            </p>
-            <p className="text-green-400 mb-4">$ Sync complete ✔</p>
-
-            <div className="bg-white/20 rounded p-4">
-              <p className="text-xs text-gray-200">Active Cases</p>
-              <p className="text-xl font-bold">1,248</p>
-            </div>
+          <div className="bg-gray-100 rounded-lg min-h-[200px] md:min-h-[280px] p-4 shadow-inner flex items-center justify-center">
+            <img
+              src="/dashboard-preview.png"
+              alt="Platform preview"
+              className="rounded shadow-md max-h-[240px] object-contain"
+            />
           </div>
         </div>
       </section>
