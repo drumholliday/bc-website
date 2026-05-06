@@ -6,44 +6,49 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
       {/* NAVBAR */}
-     <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-2">
-  <h1 className="text-xl font-bold tracking-tight mb-2 md:mb-0">
-    Bankruptcy Control™
-  </h1>
+      <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-2">
+        <h1 className="text-xl font-bold tracking-tight mb-0">
+          Bankruptcy Control™
+        </h1>
 
-  <div className="flex flex-wrap gap-4 md:gap-6 text-sm md:text-base font-medium items-center">
-    <a className="text-sm font-medium">Home</a>
-    <a href="#why-bankruptcy-control" className="hover:text-blue-700 transition">
-      Why Bankruptcy Control
-    </a>
-    <a href="#product" className="hover:text-blue-700 transition">
-      Product
-    </a>
-    <a href="#about" className="hover:text-blue-700 transition">
-      About
-    </a>
-    <a href="#trust" className="hover:text-blue-700 transition">
-      Trusted
-    </a>
-    <a href="#faq" className="hover:text-blue-700 transition">
-      FAQ
-    </a>
-    <a href="#contact" className="hover:text-blue-700 transition">
-      Contact
-    </a>
+        <div className="flex flex-wrap gap-4 md:gap-6 text-sm md:text-base font-medium items-center">
+          <a href="#home" className="hover:text-blue-700 transition">
+            Home
+          </a>
+          <a
+            href="#why-bankruptcy-control"
+            className="hover:text-blue-700 transition"
+          >
+            Why Bankruptcy Control
+          </a>
+          <a href="#product" className="hover:text-blue-700 transition">
+            Product
+          </a>
+          <a href="#about" className="hover:text-blue-700 transition">
+            About
+          </a>
+          <a href="#trust" className="hover:text-blue-700 transition">
+            Trusted
+          </a>
+          <a href="#faq" className="hover:text-blue-700 transition">
+            FAQ
+          </a>
+          <a href="#contact" className="hover:text-blue-700 transition">
+            Contact
+          </a>
 
-    <a
-      href="#"
-      onClick={(e) => {
-        e.preventDefault();
-        alert("Client login coming soon");
-      }}
-      className="text-gray-500 hover:text-gray-900 ml-4"
-    >
-      Client Login
-    </a>
-  </div>
-</nav>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              alert("Client login coming soon");
+            }}
+            className="text-gray-500 hover:text-gray-900 ml-3"
+          >
+            Client Login
+          </a>
+        </div>
+      </nav>
 
       {/* HERO */}
       <section
@@ -368,33 +373,34 @@ export default function Home() {
               </p>
             </div>
             {/* NEW 4 (SECOND ROW) */}
-  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-    <h4 className="font-semibold mb-2">Lorem Ipsum</h4>
-    <p className="text-gray-600 text-lg">
-      Placeholder text for future feature or capability description.
-    </p>
-  </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <h4 className="font-semibold mb-2">Lorem Ipsum</h4>
+              <p className="text-gray-600 text-lg">
+                Placeholder text for future feature or capability description.
+              </p>
+            </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-    <h4 className="font-semibold mb-2">Dolor Sit Amet</h4>
-    <p className="text-gray-600 text-lg">
-      Additional functionality or system benefit can be described here.
-    </p>
-  </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <h4 className="font-semibold mb-2">Dolor Sit Amet</h4>
+              <p className="text-gray-600 text-lg">
+                Additional functionality or system benefit can be described
+                here.
+              </p>
+            </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-    <h4 className="font-semibold mb-2">Consectetur</h4>
-    <p className="text-gray-600 text-lg">
-      Expand on platform capabilities or integrations in this space.
-    </p>
-  </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <h4 className="font-semibold mb-2">Consectetur</h4>
+              <p className="text-gray-600 text-lg">
+                Expand on platform capabilities or integrations in this space.
+              </p>
+            </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-    <h4 className="font-semibold mb-2">Adipiscing Elit</h4>
-    <p className="text-gray-600 text-lg">
-      Future enhancements, reporting tools, or analytics features.
-    </p>
-  </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <h4 className="font-semibold mb-2">Adipiscing Elit</h4>
+              <p className="text-gray-600 text-lg">
+                Future enhancements, reporting tools, or analytics features.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -452,68 +458,70 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-<section
-  id="faq"
-  className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-white"
->
-  <div className="max-w-4xl mx-auto text-center">
-    
-    {/* TITLE */}
-    <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10 md:mb-12">
-      Frequently Asked Questions
-    </h3>
+      <section
+        id="faq"
+        className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-white"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          {/* TITLE */}
+          <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10 md:mb-12">
+            Frequently Asked Questions
+          </h3>
 
-    {/* QUESTIONS */}
-    <div className="space-y-6 text-left">
-      
-      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
-        <h4 className="font-semibold mb-2">
-          What is Bankruptcy Control?
-        </h4>
-        <p className="text-gray-600">
-          A platform designed to manage bankruptcy accounts, track plans, and ensure compliance for creditors and servicers.
-        </p>
-      </div>
+          {/* QUESTIONS */}
+          <div className="space-y-6 text-left">
+            <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
+              <h4 className="font-semibold mb-2">
+                What is Bankruptcy Control?
+              </h4>
+              <p className="text-gray-600">
+                A platform designed to manage bankruptcy accounts, track plans,
+                and ensure compliance for creditors and servicers.
+              </p>
+            </div>
 
-      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
-        <h4 className="font-semibold mb-2">
-          Who should use this platform?
-        </h4>
-        <p className="text-gray-600">
-          Creditors, loan servicers, attorneys, and organizations managing bankruptcy portfolios.
-        </p>
-      </div>
+            <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
+              <h4 className="font-semibold mb-2">
+                Who should use this platform?
+              </h4>
+              <p className="text-gray-600">
+                Creditors, loan servicers, attorneys, and organizations managing
+                bankruptcy portfolios.
+              </p>
+            </div>
 
-      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
-        <h4 className="font-semibold mb-2">
-          Why not manage bankruptcy accounts in a servicing system?
-        </h4>
-        <p className="text-gray-600">
-          Bankruptcy plans often conflict with loan structures, making accurate tracking difficult and increasing compliance risk.
-        </p>
-      </div>
+            <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
+              <h4 className="font-semibold mb-2">
+                Why not manage bankruptcy accounts in a servicing system?
+              </h4>
+              <p className="text-gray-600">
+                Bankruptcy plans often conflict with loan structures, making
+                accurate tracking difficult and increasing compliance risk.
+              </p>
+            </div>
 
-     <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
-        <h4 className="font-semibold mb-2">
-          Is the platform cloud-based?
-        </h4>
-        <p className="text-gray-600">
-          Yes, Bankruptcy Control is securely hosted and accessible through modern web browsers.
-        </p>
-      </div>
+            <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
+              <h4 className="font-semibold mb-2">
+                Is the platform cloud-based?
+              </h4>
+              <p className="text-gray-600">
+                Yes, Bankruptcy Control is securely hosted and accessible
+                through modern web browsers.
+              </p>
+            </div>
 
-      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
-        <h4 className="font-semibold mb-2">
-          Can it integrate with existing systems?
-        </h4>
-        <p className="text-gray-600">
-          The platform is designed to operate alongside servicing systems and can integrate with key data sources where needed.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+            <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
+              <h4 className="font-semibold mb-2">
+                Can it integrate with existing systems?
+              </h4>
+              <p className="text-gray-600">
+                The platform is designed to operate alongside servicing systems
+                and can integrate with key data sources where needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* DEMO REQUEST */}
       <section
@@ -585,7 +593,6 @@ export default function Home() {
     </main>
   );
 }
-
 
 // **** PRIOR CODE MIGHT REUSE LATER
 // "use client";
