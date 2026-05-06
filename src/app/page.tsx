@@ -1,4 +1,3 @@
-
 "use client"; //USE FOR NOW: Tells Next.js This file must run in the browser (client-side), not on the server.
 import { useState } from "react";
 
@@ -15,6 +14,9 @@ export default function Home() {
         <div className="flex flex-wrap gap-4 md:gap-6 text-base md:text-lg font-medium items-center">
           <a href="#home" className="hover:text-blue-700 transition">
             Home
+          </a>
+          <a href="#why-bankruptcy-control" className="hover:text-blue-700 transition">
+            Why Bankruptcy Control
           </a>
           <a href="#product" className="hover:text-blue-700 transition">
             Product
@@ -144,7 +146,10 @@ export default function Home() {
       </section>
 
       {/* WHY USE BANKRUPTCY CONTROL */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-gray-50">
+      <section
+        id="why-bankruptcy-control"
+        className="scroll-mt-24 py-16 md:py-20 px-4 md:px-6 bg-gray-50"
+      >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* LEFT SIDE (TEXT) */}
           <div>
@@ -365,6 +370,34 @@ export default function Home() {
                 Track claims and payments efficiently.
               </p>
             </div>
+            {/* NEW 4 (SECOND ROW) */}
+  <div className="p-6 bg-white rounded-lg shadow-sm">
+    <h4 className="font-semibold mb-2">Lorem Ipsum</h4>
+    <p className="text-gray-600 text-lg">
+      Placeholder text for future feature or capability description.
+    </p>
+  </div>
+
+  <div className="p-6 bg-white rounded-lg shadow-sm">
+    <h4 className="font-semibold mb-2">Dolor Sit Amet</h4>
+    <p className="text-gray-600 text-lg">
+      Additional functionality or system benefit can be described here.
+    </p>
+  </div>
+
+  <div className="p-6 bg-white rounded-lg shadow-sm">
+    <h4 className="font-semibold mb-2">Consectetur</h4>
+    <p className="text-gray-600 text-lg">
+      Expand on platform capabilities or integrations in this space.
+    </p>
+  </div>
+
+  <div className="p-6 bg-white rounded-lg shadow-sm">
+    <h4 className="font-semibold mb-2">Adipiscing Elit</h4>
+    <p className="text-gray-600 text-lg">
+      Future enhancements, reporting tools, or analytics features.
+    </p>
+  </div>
           </div>
         </div>
       </section>
@@ -422,7 +455,70 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section
+      {/* FAQ */}
+<section
+  id="faq"
+  className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-white"
+>
+  <div className="max-w-4xl mx-auto text-center">
+    
+    {/* TITLE */}
+    <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-12">
+      Frequently Asked Questions
+    </h3>
+
+    {/* QUESTIONS */}
+    <div className="space-y-6 text-left">
+      
+      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+        <h4 className="font-semibold mb-2">
+          What is Bankruptcy Control?
+        </h4>
+        <p className="text-gray-600">
+          A platform designed to manage bankruptcy accounts, track plans, and ensure compliance for creditors and servicers.
+        </p>
+      </div>
+
+      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+        <h4 className="font-semibold mb-2">
+          Who should use this platform?
+        </h4>
+        <p className="text-gray-600">
+          Creditors, loan servicers, attorneys, and organizations managing bankruptcy portfolios.
+        </p>
+      </div>
+
+      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+        <h4 className="font-semibold mb-2">
+          Why not manage bankruptcy accounts in a servicing system?
+        </h4>
+        <p className="text-gray-600">
+          Bankruptcy plans often conflict with loan structures, making accurate tracking difficult and increasing compliance risk.
+        </p>
+      </div>
+
+     <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+        <h4 className="font-semibold mb-2">
+          Is the platform cloud-based?
+        </h4>
+        <p className="text-gray-600">
+          Yes, Bankruptcy Control is securely hosted and accessible through modern web browsers.
+        </p>
+      </div>
+
+      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+        <h4 className="font-semibold mb-2">
+          Can it integrate with existing systems?
+        </h4>
+        <p className="text-gray-600">
+          The platform is designed to operate alongside servicing systems and can integrate with key data sources where needed.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+      {/* <section
         id="faq"
         className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-white"
       >
@@ -454,7 +550,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* DEMO REQUEST */}
       <section
@@ -528,6 +624,7 @@ export default function Home() {
 }
 
 
+// **** PRIOR CODE MIGHT REUSE LATER
 // "use client";
 // import { useState } from "react";
 
