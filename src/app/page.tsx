@@ -8,7 +8,7 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-4">
         <h1 className="text-2xl font-bold tracking-tight mb-2 md:mb-0">
-          BC Control™
+          Bankruptcy Control™
         </h1>
 
         <div className="flex flex-wrap gap-4 md:gap-6 text-base md:text-lg font-medium items-center">
