@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/60 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-4">
+      <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-4">
         <h1 className="text-2xl font-bold tracking-tight mb-2 md:mb-0">
           Bankruptcy Control™
         </h1>
@@ -51,7 +51,7 @@ export default function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="scroll-mt-24 bg-blue-900 text-white py-16 md:py-32 px-4 md:px-6"
+        className="scroll-mt-24 bg-blue-900 text-white py-20 md:py-28 px-4 md:px-6"
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT SIDE */}
@@ -148,7 +148,7 @@ export default function Home() {
       {/* WHY USE BANKRUPTCY CONTROL */}
       <section
         id="why-bankruptcy-control"
-        className="scroll-mt-24 py-16 md:py-20 px-4 md:px-6 bg-gray-50"
+        className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-gray-50"
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* LEFT SIDE (TEXT) */}
@@ -258,10 +258,10 @@ export default function Home() {
       {/* PRODUCT */}
       <section
         id="product"
-        className="scroll-mt-24 py-16 md:py-28 px-4 md:px-6 bg-white"
+        className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-white"
       >
         <div className="max-w-6xl mx-auto">
-          <div className="h-px bg-gray-200 mb-12" />
+          <div className="h-px bg-gray-200 mb-10 md:mb-12" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* LEFT SIDE */}
@@ -335,64 +335,64 @@ export default function Home() {
       {/* ABOUT (TAKE CONTROL) */}
       <section
         id="about"
-        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-gray-50"
+        className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-gray-50"
       >
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-12">
+          <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10 md:mb-12">
             Take Control of Bankruptcy Accounts
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
-            <div className="p-6 bg-white rounded-lg shadow-sm">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold mb-2">Reduce Legal Risk</h4>
               <p className="text-gray-600 text-lg">
                 Identify filings early and reduce legal exposure.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg shadow-sm">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold mb-2">Ensure Compliance</h4>
               <p className="text-gray-600 text-lg">
                 Automatically use correct court forms.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg shadow-sm">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold mb-2">Protect Data</h4>
               <p className="text-gray-600 text-lg">
                 Automatically redact sensitive information.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg shadow-sm">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
               <h4 className="font-semibold mb-2">Improve Collections</h4>
               <p className="text-gray-600 text-lg">
                 Track claims and payments efficiently.
               </p>
             </div>
             {/* NEW 4 (SECOND ROW) */}
-  <div className="p-6 bg-white rounded-lg shadow-sm">
+  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
     <h4 className="font-semibold mb-2">Lorem Ipsum</h4>
     <p className="text-gray-600 text-lg">
       Placeholder text for future feature or capability description.
     </p>
   </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm">
+  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
     <h4 className="font-semibold mb-2">Dolor Sit Amet</h4>
     <p className="text-gray-600 text-lg">
       Additional functionality or system benefit can be described here.
     </p>
   </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm">
+  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
     <h4 className="font-semibold mb-2">Consectetur</h4>
     <p className="text-gray-600 text-lg">
       Expand on platform capabilities or integrations in this space.
     </p>
   </div>
 
-  <div className="p-6 bg-white rounded-lg shadow-sm">
+  <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
     <h4 className="font-semibold mb-2">Adipiscing Elit</h4>
     <p className="text-gray-600 text-lg">
       Future enhancements, reporting tools, or analytics features.
@@ -403,10 +403,10 @@ export default function Home() {
       </section>
 
       {/* TRUST / CREDENTIALS */}
-      <section id="trust" className="scroll-mt-24 py-16 px-6 bg-white">
+      <section id="trust" className="scroll-mt-24 py-20 md:py-28 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <div className="h-px bg-gray-200 mb-10" />
-          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-12">
+          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10 md:mb-12">
             Trusted Infrastructure & Experience
           </h3>
 
@@ -424,7 +424,7 @@ export default function Home() {
 
           {/* 3 ITEMS BELOW */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 items-center">
-            <div className="text-center flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 transition">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition text-center flex flex-col items-center justify-center">
               <div className="text-3xl md:text-4xl font-semibold tracking-tight text-blue-700 mb-2">
                 40+
               </div>
@@ -433,7 +433,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 transition">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition text-center flex flex-col items-center justify-center">
               <div className="text-3xl md:text-4xl font-semibold tracking-tight text-blue-700 mb-2">
                 20+
               </div>
@@ -442,7 +442,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 transition">
+            <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition text-center flex flex-col items-center justify-center">
               <div className="text-3xl md:text-4xl font-semibold tracking-tight text-amber-400 mb-2">
                 AWS
               </div>
@@ -455,22 +455,21 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      {/* FAQ */}
 <section
   id="faq"
-  className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-white"
+  className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-white"
 >
   <div className="max-w-4xl mx-auto text-center">
     
     {/* TITLE */}
-    <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-12">
+    <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10 md:mb-12">
       Frequently Asked Questions
     </h3>
 
     {/* QUESTIONS */}
     <div className="space-y-6 text-left">
       
-      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
         <h4 className="font-semibold mb-2">
           What is Bankruptcy Control?
         </h4>
@@ -479,7 +478,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
         <h4 className="font-semibold mb-2">
           Who should use this platform?
         </h4>
@@ -488,7 +487,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
         <h4 className="font-semibold mb-2">
           Why not manage bankruptcy accounts in a servicing system?
         </h4>
@@ -497,7 +496,7 @@ export default function Home() {
         </p>
       </div>
 
-     <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+     <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
         <h4 className="font-semibold mb-2">
           Is the platform cloud-based?
         </h4>
@@ -506,7 +505,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="p-6 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition">
+      <div className="p-6 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-lg shadow-sm hover:shadow-md hover:border-blue-400 transition">
         <h4 className="font-semibold mb-2">
           Can it integrate with existing systems?
         </h4>
@@ -518,44 +517,11 @@ export default function Home() {
     </div>
   </div>
 </section>
-      {/* <section
-        id="faq"
-        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-white"
-      >
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10 text-center">
-            Frequently Asked Questions
-          </h3>
-
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-semibold">What is Bankruptcy Control?</h4>
-              <p className="text-gray-600 text-lg">
-                A platform for managing bankruptcy accounts and compliance.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold">Who is it for?</h4>
-              <p className="text-gray-600 text-lg">
-                Creditors, servicers, attorneys, and debt buyers.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold">Is it cloud-based?</h4>
-              <p className="text-gray-600 text-lg">
-                Yes, accessible via modern web browsers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* DEMO REQUEST */}
       <section
         id="contact"
-        className="scroll-mt-24 py-16 md:py-24 px-4 md:px-6 bg-gray-50"
+        className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-gray-50"
       >
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
