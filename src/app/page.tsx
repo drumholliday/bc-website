@@ -6,47 +6,44 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-4">
-        <h1 className="text-2xl font-bold tracking-tight mb-2 md:mb-0">
-          Bankruptcy Control™
-        </h1>
+     <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200 shadow-sm flex flex-wrap md:flex-nowrap justify-between items-center px-4 md:px-8 py-2">
+  <h1 className="text-xl font-bold tracking-tight mb-2 md:mb-0">
+    Bankruptcy Control™
+  </h1>
 
-        <div className="flex flex-wrap gap-4 md:gap-6 text-base md:text-lg font-medium items-center">
-          <a href="#home" className="hover:text-blue-700 transition">
-            Home
-          </a>
-          <a href="#why-bankruptcy-control" className="hover:text-blue-700 transition">
-            Why Bankruptcy Control
-          </a>
-          <a href="#product" className="hover:text-blue-700 transition">
-            Product
-          </a>
-          <a href="#about" className="hover:text-blue-700 transition">
-            About
-          </a>
-          <a href="#trust" className="hover:text-blue-700 transition">
-            Trusted
-          </a>
-          <a href="#faq" className="hover:text-blue-700 transition">
-            FAQ
-          </a>
-          <a href="#contact" className="hover:text-blue-700 transition">
-            Contact
-          </a>
+  <div className="flex flex-wrap gap-4 md:gap-6 text-sm md:text-base font-medium items-center">
+    <a className="text-sm font-medium">Home</a>
+    <a href="#why-bankruptcy-control" className="hover:text-blue-700 transition">
+      Why Bankruptcy Control
+    </a>
+    <a href="#product" className="hover:text-blue-700 transition">
+      Product
+    </a>
+    <a href="#about" className="hover:text-blue-700 transition">
+      About
+    </a>
+    <a href="#trust" className="hover:text-blue-700 transition">
+      Trusted
+    </a>
+    <a href="#faq" className="hover:text-blue-700 transition">
+      FAQ
+    </a>
+    <a href="#contact" className="hover:text-blue-700 transition">
+      Contact
+    </a>
 
-          {/* Client Login */}
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("Client login coming soon");
-            }}
-            className="text-gray-500 hover:text-gray-900 ml-4"
-          >
-            Client Login
-          </a>
-        </div>
-      </nav>
+    <a
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        alert("Client login coming soon");
+      }}
+      className="text-gray-500 hover:text-gray-900 ml-4"
+    >
+      Client Login
+    </a>
+  </div>
+</nav>
 
       {/* HERO */}
       <section
@@ -266,7 +263,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* LEFT SIDE */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
+              <h3 className="text-xl md:text-3xl font-semibold tracking-tight mb-6">
                 A Complete Platform for Bankruptcy Case Management
               </h3>
 
