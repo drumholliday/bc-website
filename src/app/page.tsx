@@ -260,7 +260,7 @@ export default function Home() {
         id="product"
         className="scroll-mt-24 py-20 md:py-28 px-4 md:px-6 bg-white"
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="h-px bg-gray-200 mb-10 md:mb-12" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
