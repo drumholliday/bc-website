@@ -266,7 +266,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* LEFT SIDE */}
             <div>
-              <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
                 A Complete Platform for Bankruptcy Case Management
               </h3>
 
