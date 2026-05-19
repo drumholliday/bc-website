@@ -155,7 +155,7 @@ export default function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="scroll-mt-32 bg-blue-900 text-white py-28 md:py-36 px-6 md:px-8"
+        className="scroll-mt-32 bg-blue-900 text-white py-20 md:py-36 px-6 md:px-8"
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           {/* LEFT */}
@@ -232,7 +232,7 @@ export default function Home() {
       {/* WHY */}
       <motion.section
         id="why-bankruptcy-control"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-gray-50"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -314,7 +314,7 @@ export default function Home() {
       {/* PRODUCT */}
       <motion.section
         id="product"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-white"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -391,7 +391,7 @@ export default function Home() {
       {/* ABOUT */}
       <motion.section
         id="about"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-gray-50"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -447,7 +447,7 @@ export default function Home() {
       {/* TRUST */}
       <motion.section
         id="trust"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-white"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -511,7 +511,7 @@ export default function Home() {
       {/* FAQ */}
       <motion.section
         id="faq"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-white"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -558,7 +558,7 @@ export default function Home() {
       {/* CONTACT */}
       <motion.section
         id="contact"
-        className="scroll-mt-32 py-28 md:py-36 px-6 md:px-8 bg-gray-50"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
