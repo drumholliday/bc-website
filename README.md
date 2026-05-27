@@ -27,12 +27,17 @@ It focuses specifically on frontend UI/UX improvements and does not replace or m
 ## Features
 
 - Modern responsive UI built with Next.js (App Router)
-- Tailwind CSS for fast and consistent styling
-- Structured product landing page:
-  - Hero section (value proposition)
-  - Product overview
-  - Solutions (feature highlights)
-  - Demo request form
+- Tailwind CSS for scalable enterprise styling
+- Multi-page platform architecture
+- Dedicated operational platform sections:
+  - Operations
+  - Platform Capabilities
+  - Security & Infrastructure
+- Interactive platform overview cards with dedicated detail pages
+- Responsive desktop and mobile navigation
+- Mobile hamburger menu support
+- Structured enterprise SaaS layout and information architecture
+- Demo request form (frontend implementation)
 - Clean, scalable component structure
 
 ---
@@ -71,17 +76,37 @@ http://localhost:3000
 
 ## Project Structure
 
-```
+```text
 bc-website/
+├── public/                 # Static assets and images
 ├── src/
 │   └── app/
-│       ├── page.tsx       # Main landing page
-│       ├── layout.tsx     # Root layout
-│       └── globals.css    # Global styles
-├── public/                # Static assets
+│       ├── capabilities/   # Platform capabilities subpage
+│       │   └── page.tsx
+│       ├── operations/     # Operations subpage
+│       │   └── page.tsx
+│       ├── security/       # Security & infrastructure subpage
+│       │   └── page.tsx
+│       ├── globals.css     # Global styles
+│       ├── layout.tsx      # Root layout and metadata
+│       └── page.tsx        # Main landing page
 ├── package.json
 └── README.md
 ```
+
+---
+
+## Architecture Direction
+
+The platform is evolving from a traditional landing-page structure into a multi-page enterprise SaaS architecture.
+
+The homepage is designed to provide a concise executive overview of the platform, while dedicated subpages provide deeper operational detail for areas such as:
+
+- Operations
+- Platform Capabilities
+- Security & Infrastructure
+
+This structure improves scalability, readability, and long-term maintainability as the platform grows.
 
 ---
 
@@ -97,9 +122,19 @@ bc-website/
 
 - Integrate demo/contact form with backend services  
 - Add authentication and user dashboard  
-- Replace mock UI with real product screenshots  
+- Replace placeholder visuals with real product screenshots and     workflow diagrams  
 - Integrate with bankruptcy data sources and servicing systems  
 - Improve performance, accessibility, and SEO  
+
+---
+
+## Design Goals
+
+- Improve usability and operational clarity
+- Modernize the user experience for bankruptcy operations
+- Create scalable enterprise SaaS information architecture
+- Improve responsiveness across desktop and mobile devices
+- Support future backend integration and operational workflows
 
 ---
 
