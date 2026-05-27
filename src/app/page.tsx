@@ -47,6 +47,13 @@ export default function Home() {
               Capabilities
             </a>
 
+            <a
+              href="#who-we-serve"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Who We Serve
+            </a>
+
             <a href="#about" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
               About
             </a>
@@ -71,7 +78,7 @@ export default function Home() {
               }}
               className="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded ml-2 transition"
             >
-              Client Login
+              Login
             </a>
           </div>
 
@@ -126,6 +133,14 @@ export default function Home() {
             </a>
 
             <a
+              href="#who-we-serve"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Who We Serve
+            </a>
+
+            <a
               href="#about"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
@@ -166,7 +181,7 @@ export default function Home() {
               }}
               className="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Client Login
+              Login
             </a>
           </motion.div>
         )}
@@ -253,9 +268,9 @@ export default function Home() {
       <motion.section
         id="why-bankruptcy-control"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -335,9 +350,9 @@ export default function Home() {
       <motion.section
         id="product"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto">
@@ -345,7 +360,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-white">
+              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
                 A Complete Platform for Bankruptcy Case Management
               </h2>
 
@@ -411,9 +426,9 @@ export default function Home() {
 <motion.section
   id="capabilities"
   className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-  initial={{ opacity: 0, y: 60 }}
+  initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.9 }}
+  transition={{ duration: 0.6 }}
   viewport={{ once: true, amount: 0.3 }}
 >
   <div className="max-w-7xl mx-auto">
@@ -471,7 +486,7 @@ export default function Home() {
       ].map((section) => (
         <div
           key={section.title}
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8"
+          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
         >
           <h3 className="text-2xl font-semibold mb-6 text-blue-900">
             {section.title}
@@ -494,6 +509,71 @@ export default function Home() {
   </div>
 </motion.section>
 
+{/* Gradient Divide Gray to White */}
+<div className="h-16 bg-gradient-to-b from-gray-50 to-white" />
+
+{/* WHO WE SERVE */}
+<motion.section
+  id="who-we-serve"
+  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+        Who We Serve
+      </h2>
+
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Bankruptcy Control is designed to support organizations managing
+        bankruptcy accounts, compliance workflows, and servicing operations
+        across complex portfolios.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+      {[
+        {
+          title: "Loan Servicers",
+          description:
+            "Support bankruptcy monitoring, payment tracking, reporting, and operational workflows across servicing portfolios.",
+        },
+        {
+          title: "Creditors",
+          description:
+            "Improve visibility into bankruptcy activity, claims management, compliance processes, and account oversight.",
+        },
+        {
+          title: "Collection Agencies",
+          description:
+            "Manage bankruptcy-related account activity while supporting operational controls and compliance requirements.",
+        },
+        {
+          title: "Bankruptcy Counsel",
+          description:
+            "Coordinate workflows, documents, notes, and case activity across assigned bankruptcy matters and portfolios.",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="bg-gray-50 rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
+        >
+          <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+            {item.title}
+          </h3>
+
+          <p className="text-gray-700 text-lg leading-relaxed">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</motion.section>
+
       {/* Gradient Divide White to Gray */}
       <div className="h-16 bg-gradient-to-b from-white to-gray-50" />
 
@@ -501,9 +581,9 @@ export default function Home() {
       <motion.section
         id="about"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto text-center">
@@ -539,7 +619,7 @@ export default function Home() {
             ].map(([title, text]) => (
               <div
                 key={title}
-                className="p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
+                className="p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition duration-300"
               >
                 <h4 className="font-semibold text-2xl mb-4">{title}</h4>
 
@@ -557,9 +637,9 @@ export default function Home() {
       <motion.section
         id="trust"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto text-center">
@@ -585,7 +665,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 items-center">
-            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition duration-300">
               <div className="text-5xl md:text-6xl font-semibold text-blue-700 mb-4">
                 40+
               </div>
@@ -595,7 +675,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition duration-300">
               <div className="text-5xl md:text-6xl font-semibold text-blue-700 mb-4">
                 20+
               </div>
@@ -605,7 +685,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+            <div className="p-6 md:p-10 bg-white rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition duration-300">
               <div className="text-5xl md:text-6xl font-semibold text-amber-400 mb-4">
                 AWS
               </div>
@@ -624,9 +704,9 @@ export default function Home() {
       <motion.section
         id="faq"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-5xl mx-auto text-center">
@@ -651,7 +731,7 @@ export default function Home() {
             ].map(([question, answer]) => (
               <div
                 key={question}
-                className="p-6 md:p-8 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
+                className="p-6 md:p-8 bg-white border border-blue-200 border-l-4 border-l-blue-600 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-2xl transition duration-300"
               >
                 <h4 className="font-semibold text-2xl mb-4">{question}</h4>
 
@@ -664,15 +744,15 @@ export default function Home() {
         </div>
       </motion.section>
       {/* Gradient Dividde White to Gray */}
-      <div className="h-20 bg-gradient-to-b from-white to-gray-50" />
+      <div className="h-20 bg-linear-to-b from-white to-gray-50" />
 
       {/* CONTACT */}
       <motion.section
         id="contact"
         className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-blue-900 text-white"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-4xl mx-auto">
