@@ -54,6 +54,13 @@ export default function Home() {
               Who We Serve
             </a>
 
+             <a
+              href="#security"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Security
+            </a>
+
             <a href="#about" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
               About
             </a>
@@ -138,6 +145,14 @@ export default function Home() {
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
               Who We Serve
+            </a>
+
+            <a
+              href="#security"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Security
             </a>
 
             <a
@@ -568,6 +583,95 @@ export default function Home() {
           <p className="text-gray-700 text-lg leading-relaxed">
             {item.description}
           </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</motion.section>
+
+{/* Gradient Divide White to Gray */}
+<div className="h-16 bg-gradient-to-b from-white to-gray-50" />
+
+{/* SECURITY & INFRASTRUCTURE */}
+<motion.section
+  id="security"
+  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+        Security & Infrastructure
+      </h2>
+
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Bankruptcy Control is designed to support operational reliability,
+        controlled access, compliance visibility, and secure handling of
+        sensitive bankruptcy-related data.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {[
+        {
+          title: "Operational Security",
+          items: [
+            "Controlled platform access",
+            "Privacy-conscious workflow design",
+            "Sensitive data redaction support",
+            "Operational audit visibility",
+          ],
+        },
+        {
+          title: "Infrastructure Reliability",
+          items: [
+            "Hosted operational environment",
+            "System backup and recovery processes",
+            "Integrated monitoring workflows",
+            "Scalable web-based platform access",
+          ],
+        },
+        {
+          title: "Compliance Support",
+          items: [
+            "Court workflow management",
+            "Compliance-oriented reporting",
+            "Operational tracking and history",
+            "Portfolio oversight tools",
+          ],
+        },
+        {
+          title: "Workflow Continuity",
+          items: [
+            "Centralized operational visibility",
+            "Work queue management",
+            "Integrated servicing workflows",
+            "Cross-team coordination support",
+          ],
+        },
+      ].map((section) => (
+        <div
+          key={section.title}
+          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
+            {section.title}
+          </h3>
+
+          <ul className="space-y-4">
+            {section.items.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-gray-700 text-lg"
+              >
+                <span className="text-green-500 mt-1">✔</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>
