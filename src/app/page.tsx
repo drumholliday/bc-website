@@ -29,36 +29,22 @@ export default function Home() {
               Home
             </a>
 
-           <a
-              href="#operations"
-              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
-            >
-              Operations
-            </a>
-
             <a href="#product"className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
               Product
             </a>
 
             <a
-              href="#capabilities"
+              href="#platform"
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Capabilities
+              Platform
             </a>
 
             <a
-              href="#who-we-serve"
+              href="#industries"
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Who We Serve
-            </a>
-
-             <a
-              href="#security"
-              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
-            >
-              Security
+              Industries
             </a>
 
             <a href="#about" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
@@ -114,13 +100,6 @@ export default function Home() {
             >
               Home
             </a>
-            <a
-              href="#operations"
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
-            >
-              Operations
-            </a>
 
             <a
               href="#product"
@@ -131,27 +110,19 @@ export default function Home() {
             </a>
 
             <a
-              href="#capabilities"
+              href="#platform"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Capabilities
+              Platform
             </a>
 
             <a
-              href="#who-we-serve"
+              href="#industries"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Who We Serve
-            </a>
-
-            <a
-              href="#security"
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
-            >
-              Security
+              Industries
             </a>
 
             <a
@@ -235,7 +206,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT */}
-          <div className="bg-white/10 rounded-2xl shadow-2xl overflow-hidden min-h-[420px] p-8 md:p-10">
+          <div className="bg-white/10 rounded-2xl shadow-2xl overflow-hidden min-h-105 p-8 md:p-10">
             <div className="space-y-4 font-mono text-sm md:text-lg">
               <p className="text-gray-100 animate-pulse">
                 $ Loading bankruptcy case data...
@@ -278,94 +249,6 @@ export default function Home() {
       {/* Gradient Divide Blue to Gray */}
       {/* <div className="h-24 bg-gradient-to-b from-blue-900 to-gray-50" /> */}
 
-      {/* OPERATIONS */}
-<motion.section
-  id="operations"
-  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Bankruptcy Operations
-      </h2>
-
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control is designed to support operational workflows,
-        portfolio visibility, compliance tracking, and centralized
-        bankruptcy account management across servicing environments.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {[
-        {
-          title: "Operational Visibility",
-          items: [
-            "Centralized bankruptcy account oversight",
-            "Real-time plan and case activity tracking",
-            "Portfolio-level monitoring workflows",
-            "Integrated operational reporting visibility",
-          ],
-        },
-        {
-          title: "Workflow Coordination",
-          items: [
-            "Task and work queue management",
-            "Servicing workflow support",
-            "Case assignment coordination",
-            "Cross-team operational visibility",
-          ],
-        },
-        {
-          title: "Compliance Operations",
-          items: [
-            "Support accounting and reporting workflows",
-            "Track plan changes and amendments",
-            "Monitor operational audit activity",
-            "Improve compliance visibility across portfolios",
-          ],
-        },
-        {
-          title: "Bankruptcy Monitoring",
-          items: [
-            "Track bankruptcy filings and updates",
-            "Monitor payment and plan activity",
-            "Support operational recovery workflows",
-            "Improve account-level visibility and control",
-          ],
-        },
-      ].map((section) => (
-        <div
-          key={section.title}
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
-        >
-          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
-            {section.title}
-          </h3>
-
-          <ul className="space-y-4">
-            {section.items.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-gray-700 text-lg"
-              >
-                <span className="text-green-500 mt-1">✔</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </div>
-</motion.section>
-
-      {/* Gradient Divide Gray to White */}
-      <div className="h-20 bg-gradient-to-b from-gray-50 to-white" />
 
       {/* PRODUCT */}
       <motion.section
@@ -440,12 +323,13 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-{/* Gradient Divide White to Gray */}
-<div className="h-16 bg-gradient-to-b from-white to-gray-50" />
 
-{/* PLATFORM CAPABILITIES */}
+{/* Gradient Divide White to Gray */}
+<div className="h-16 bg-linear-to-b from-white to-gray-50" />
+
+{/* PLATFORM OVERVIEW */}
 <motion.section
-  id="capabilities"
+  id="platform"
   className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
   initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -455,87 +339,96 @@ export default function Home() {
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Platform Capabilities
+        Platform Overview
       </h2>
 
       <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control combines bankruptcy workflow automation,
-        compliance management, reporting, and servicing integrations
-        into a centralized operational platform for creditors and
-        servicing organizations.
+        Bankruptcy Control combines operational workflows,
+        compliance visibility, reporting systems, and secure
+        infrastructure into a centralized bankruptcy operations platform.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {[
-        {
-          title: "Connectivity",
-          items: [
-            "Servicing system integrations",
-            "Bankruptcy notification monitoring",
-            "Chapter 13 payment tracking",
-            "Court and docket data integration",
-          ],
-        },
-        {
-          title: "Compliance",
-          items: [
-            "Local court form support",
-            "Privacy data redaction controls",
-            "Audit and reporting visibility",
-            "Regulatory workflow support",
-          ],
-        },
-        {
-          title: "Counsel & Workflow",
-          items: [
-            "Local counsel coordination",
-            "Case assignment workflows",
-            "Work queue management",
-            "Document generation tools",
-          ],
-        },
-        {
-          title: "Reporting & Monitoring",
-          items: [
-            "Portfolio performance reporting",
-            "Payment monitoring",
-            "Compliance analytics",
-            "Operational visibility dashboards",
-          ],
-        },
-      ].map((section) => (
-        <div
-          key={section.title}
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
-        >
-          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
-            {section.title}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      {/* OPERATIONS */}
+      <a
+        href="/operations"
+        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+      >
+        <div className="h-48 bg-linear-to-br from-blue-950 to-blue-700" />
+
+        <div className="p-8">
+          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+            Operations
           </h3>
 
-          <ul className="space-y-4">
-            {section.items.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-gray-700 text-lg"
-              >
-                <span className="text-green-500 mt-1">✔</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Bankruptcy workflow coordination, operational visibility,
+            account tracking, and centralized servicing operations.
+          </p>
+
+          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+            Explore Operations →
+          </p>
         </div>
-      ))}
+      </a>
+
+      {/* CAPABILITIES */}
+      <a
+        href="/capabilities"
+        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+      >
+        <div className="h-48 bg-linear-to-br from-blue-700 to-blue-950" />
+
+        <div className="p-8">
+          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+            Platform Capabilities
+          </h3>
+
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Reporting systems, integrations, compliance workflows,
+            monitoring tools, and operational platform functionality.
+          </p>
+
+          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+            Explore Capabilities →
+          </p>
+        </div>
+      </a>
+
+      {/* SECURITY */}
+      <a
+        href="/security"
+        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+      >
+        <div className="h-48 bg-linear-to-br from-blue-800 to-blue-950" />
+
+        <div className="p-8">
+          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+            Security & Infrastructure
+          </h3>
+
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Hosted operational environments, workflow continuity,
+            access visibility, and infrastructure reliability systems.
+          </p>
+
+          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+            Explore Security →
+          </p>
+        </div>
+      </a>
     </div>
   </div>
 </motion.section>
 
-{/* Gradient Divide Gray to White */}
-<div className="h-16 bg-gradient-to-b from-gray-50 to-white" />
+{/* Gradient Divide White to Gray */}
+<div className="h-16 bg-linear-to-b from-white to-gray-50" />
 
-{/* WHO WE SERVE */}
+{/* Industries */}
 <motion.section
-  id="who-we-serve"
+  id="industries"
   className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
   initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -545,13 +438,13 @@ export default function Home() {
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Who We Serve
+        Industries
       </h2>
 
       <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control is designed to support organizations managing
-        bankruptcy accounts, compliance workflows, and servicing operations
-        across complex portfolios.
+        Bankruptcy Control supports operational workflows across servicing,
+        legal, compliance, and bankruptcy-related organizations managing
+        complex account portfolios.
       </p>
     </div>
 
@@ -596,96 +489,8 @@ export default function Home() {
 </motion.section>
 
 {/* Gradient Divide White to Gray */}
-<div className="h-16 bg-gradient-to-b from-white to-gray-50" />
+<div className="h-16 bg-linear-to-b from-white to-gray-50" />
 
-{/* SECURITY & INFRASTRUCTURE */}
-<motion.section
-  id="security"
-  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Security & Infrastructure
-      </h2>
-
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control is designed to support operational reliability,
-        controlled access, compliance visibility, and secure handling of
-        sensitive bankruptcy-related data.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {[
-        {
-          title: "Operational Security",
-          items: [
-            "Controlled platform access",
-            "Privacy-conscious workflow design",
-            "Sensitive data redaction support",
-            "Operational audit visibility",
-          ],
-        },
-        {
-          title: "Infrastructure Reliability",
-          items: [
-            "Hosted operational environment",
-            "System backup and recovery processes",
-            "Integrated monitoring workflows",
-            "Scalable web-based platform access",
-          ],
-        },
-        {
-          title: "Compliance Support",
-          items: [
-            "Court workflow management",
-            "Compliance-oriented reporting",
-            "Operational tracking and history",
-            "Portfolio oversight tools",
-          ],
-        },
-        {
-          title: "Workflow Continuity",
-          items: [
-            "Centralized operational visibility",
-            "Work queue management",
-            "Integrated servicing workflows",
-            "Cross-team coordination support",
-          ],
-        },
-      ].map((section) => (
-        <div
-          key={section.title}
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl"
-        >
-          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
-            {section.title}
-          </h3>
-
-          <ul className="space-y-4">
-            {section.items.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-gray-700 text-lg"
-              >
-                <span className="text-green-500 mt-1">✔</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </div>
-</motion.section>
-
-      {/* Gradient Divide White to Gray */}
-      <div className="h-16 bg-gradient-to-b from-white to-gray-50" />
 
       {/* ABOUT */}
       <motion.section
@@ -741,7 +546,7 @@ export default function Home() {
       </motion.section>
 
       {/* Gradient Divider */}
-      <div className="h-16 bg-gradient-to-b from-gray-50 to-white" />
+      <div className="h-16 bg-linear-to-b from-gray-50 to-white" />
 
       {/* TRUST */}
       <motion.section
@@ -809,7 +614,7 @@ export default function Home() {
       </motion.section>
 
       {/* Gradient Divide White to Gray */}
-      <div className="h-20 bg-gradient-to-b from-white to-gray-50" />
+      <div className="h-20 bg-linear-to-b from-white to-gray-50" />
       {/* FAQ */}
       <motion.section
         id="faq"
@@ -959,7 +764,7 @@ export default function Home() {
           id="message"
           name="message"
           placeholder="Briefly describe your organization, current workflow, or what you're looking to improve..."
-          className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg min-h-[180px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
+          className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg min-h-45 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
           rows={6}
         />
       </div>
