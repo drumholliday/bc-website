@@ -1,94 +1,104 @@
 export default function OperationsPage() {
   return (
-    <main className="bg-white text-gray-900 overflow-hidden">
+    <main className="bg-[#f5f5f4] text-white overflow-hidden">
       {/* HERO */}
-      <section className="relative bg-[#020817] text-white pt-32 pb-28 px-6 md:px-8 overflow-hidden">
+      <section className="relative overflow-hidden bg-[#050816] border-b border-white/5">
         {/* Background Glow */}
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.20),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.16),transparent_40%)] opacity-70" />
 
-        <div className="relative max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT */}
-          <div>
-            <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
-              Operations
-            </p>
+        {/* Subtle Grid */}
+        <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:80px_80px]" />
 
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] mb-8">
-              Operational Infrastructure for Bankruptcy Servicing
-            </h1>
+        <div className="relative max-w-[1600px] mx-auto px-6 md:px-10 pt-10 pb-20">
+          {/* Breadcrumbs */}
+          <div className="mb-16 flex items-center gap-4 text-base md:text-lg text-zinc-400">
+            <a href="/" className="hover:text-white transition">
+              Home
+            </a>
 
-            <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-2xl mb-10">
-              Centralized workflows, operational visibility, monitoring systems,
-              and servicing coordination designed to support complex bankruptcy
-              operations.
-            </p>
+            <span>/</span>
 
-            <div className="flex flex-wrap gap-4">
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Workflow Visibility
-              </div>
+            <a href="/#platform" className="hover:text-white transition">
+              Platform
+            </a>
 
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Operational Monitoring
-              </div>
+            <span>/</span>
 
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Centralized Coordination
-              </div>
-            </div>
+            <span className="text-white font-medium">Operations</span>
           </div>
+          <div className="grid lg:grid-cols-[1fr_1.15fr] gap-16 items-center">
+            {/* LEFT */}
+            <div>
+              <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.02] mb-8 max-w-3xl">
+                Operational Infrastructure That Drives Performance
+              </h1>
 
-          {/* RIGHT */}
-          <div className="relative">
-            <div className="bg-white/10 rounded-[36px] shadow-2xl overflow-hidden min-h-105 p-8 md:p-10 border border-white/10 backdrop-blur-xl">
-              {/* Mock Dashboard Header */}
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Operations Dashboard
-                  </p>
+              <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-2xl mb-10">
+                Bankruptcy Control centralizes operations, coordinates
+                workflows, and delivers the visibility needed to manage
+                high-volume servicing environments.
+              </p>
 
-                  <h3 className="text-2xl font-semibold">
-                    Bankruptcy Workflow Activity
-                  </h3>
+              <a
+                href="/#contact"
+                className="inline-flex items-center bg-white text-black px-7 py-4 rounded-2xl text-lg font-medium hover:bg-zinc-200 transition"
+              >
+                Contact Us →
+              </a>
+            </div>
+
+            {/* RIGHT */}
+            <div className="relative">
+              <div className="absolute -bottom-12 -left-10 w-72 h-72 rounded-full bg-blue-500/10 blur-3xl" />
+
+              <div className="relative bg-[#0B1020] rounded-[34px] border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.45)] overflow-hidden">
+                {/* Browser Top */}
+                <div className="flex items-center gap-2 px-6 py-4 border-b border-white/5 bg-black/30">
+                  <div className="w-3 h-3 rounded-full bg-red-400" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                  <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
 
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/20 border border-blue-400/20" />
-              </div>
+                {/* Dashboard */}
+                <div className="p-8 md:p-10">
+                  <div className="grid grid-cols-4 gap-4 mb-8">
+                    <div className="bg-white rounded-2xl p-5 text-black">
+                      <p className="text-sm text-zinc-500 mb-2">
+                        Active Workflows
+                      </p>
 
-              {/* Graph Area */}
-              <div className="bg-black/30 rounded-3xl border border-white/5 p-6 mb-6">
-                <div className="flex items-end gap-4 h-52">
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[35%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[52%]" />
-                  <div className="w-full bg-blue-400/40 rounded-t-3xl h-[80%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[48%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[68%]" />
-                </div>
-              </div>
+                      <p className="text-3xl font-semibold">28,540</p>
+                    </div>
 
-              {/* Bottom Stats */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">Active Workflows</p>
+                    <div className="bg-white rounded-2xl p-5 text-black">
+                      <p className="text-sm text-zinc-500 mb-2">Accounts</p>
 
-                  <p className="text-2xl font-semibold">124</p>
-                </div>
+                      <p className="text-3xl font-semibold">4,812</p>
+                    </div>
 
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Monitoring Events
-                  </p>
+                    <div className="bg-white rounded-2xl p-5 text-black">
+                      <p className="text-sm text-zinc-500 mb-2">Alerts</p>
 
-                  <p className="text-2xl font-semibold">3.4K</p>
-                </div>
+                      <p className="text-3xl font-semibold">1,203</p>
+                    </div>
 
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Portfolio Visibility
-                  </p>
+                    <div className="bg-white rounded-2xl p-5 text-black">
+                      <p className="text-sm text-zinc-500 mb-2">SLA Met</p>
 
-                  <p className="text-2xl font-semibold">98%</p>
+                      <p className="text-3xl font-semibold">96.3%</p>
+                    </div>
+                  </div>
+
+                  {/* Fake Graph */}
+                  <div className="bg-white rounded-[28px] p-8">
+                    <div className="flex items-end gap-5 h-64">
+                      <div className="w-full rounded-t-3xl bg-zinc-200 h-[35%]" />
+                      <div className="w-full rounded-t-3xl bg-zinc-300 h-[50%]" />
+                      <div className="w-full rounded-t-3xl bg-blue-500 h-[82%]" />
+                      <div className="w-full rounded-t-3xl bg-zinc-300 h-[58%]" />
+                      <div className="w-full rounded-t-3xl bg-zinc-400 h-[70%]" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,110 +107,159 @@ export default function OperationsPage() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="py-28 md:py-36 px-6 md:px-8 bg-white">
-        <div className="max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
-          {/* LEFT */}
-          <div>
-            <p className="text-blue-700 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
-              Workflow Coordination
-            </p>
+      <section className="bg-[#0A0E1A] border-b border-white/5">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20">
+          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
+            {/* LEFT */}
+            <div>
+              <p className="text-yellow-400 uppercase tracking-[0.16em] text-sm font-medium mb-6">
+                Overview
+              </p>
 
-            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-8">
-              Built to Support Complex Operational Environments
-            </h2>
+              <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-8">
+                Centralized operations.
+                <br />
+                Unified visibility.
+              </h2>
 
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8">
-              Bankruptcy Control centralizes operational workflows, monitoring
-              systems, servicing coordination, and reporting visibility into a
-              unified operational platform.
-            </p>
+              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed mb-8">
+                Our platform unifies people, processes, and operational systems
+                across servicing functions. From intake to resolution, every
+                action is tracked, monitored, and optimized in real time.
+              </p>
 
-            <div className="space-y-5">
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Centralized bankruptcy workflow coordination
-                </p>
+              <div className="space-y-4 text-zinc-300 text-lg">
+                <div>✓ Centralized operational workflows</div>
+                <div>✓ Real-time monitoring systems</div>
+                <div>✓ Scalable servicing coordination</div>
+                <div>✓ Portfolio-level visibility</div>
               </div>
+            </div>
 
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Operational monitoring and visibility systems
-                </p>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Workflow management and portfolio oversight
-                </p>
+            {/* RIGHT */}
+            <div>
+              <div className="rounded-[34px] overflow-hidden border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.45)]">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+                  alt="Operations"
+                  className="w-full h-[520px] object-cover"
+                />
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* RIGHT */}
-          <div className="relative">
-            <div className="rounded-[36px] overflow-hidden shadow-2xl border border-gray-200 bg-gray-50 min-h-110 flex items-center justify-center p-10">
-              <div className="w-full max-w-xl">
-                <div className="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
-                  <div className="px-6 py-5 border-b border-gray-100 flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-gray-500 mb-1">
-                        Operational Queue
-                      </p>
+      {/* CAPABILITIES */}
+      <section className="bg-[#050816] border-b border-white/5">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20">
+          <p className="text-yellow-400 uppercase tracking-[0.16em] text-sm font-medium mb-10">
+            Core Operational Capabilities
+          </p>
 
-                      <h3 className="text-xl font-semibold">
-                        Bankruptcy Activity
-                      </h3>
-                    </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Workflow Coordination",
+                text: "Automate and manage end-to-end operational workflows across departments and external parties.",
+              },
+              {
+                title: "Real-Time Monitoring",
+                text: "Monitor queues, tasks, and performance with real-time dashboards and alerts.",
+              },
+              {
+                title: "Operational Visibility",
+                text: "Gain a complete view across portfolios, accounts, and servicing activities.",
+              },
+              {
+                title: "Performance Management",
+                text: "Measure productivity, identify bottlenecks, and drive continuous improvement.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-white/5 border border-white/10 rounded-[30px] p-8 hover:-translate-y-2 hover:bg-white/[0.07] transition-all duration-700"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 mb-8" />
 
-                    <div className="w-10 h-10 rounded-2xl bg-gray-100" />
-                  </div>
+                <h3 className="text-2xl font-semibold mb-5">{item.title}</h3>
 
-                  <div className="p-6 space-y-4">
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Filing Activity</p>
+                <p className="text-zinc-400 text-lg leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                        <p className="text-gray-500">Active</p>
-                      </div>
+      {/* BUILT FOR COMPLEXITY */}
+      <section className="bg-[#f5f5f4] text-black">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-24">
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
+            {/* LEFT */}
+            <div>
+              <p className="text-yellow-700 uppercase tracking-[0.16em] text-sm font-medium mb-6">
+                Built for Complexity
+              </p>
 
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[75%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
+              <h2 className="text-5xl md:text-6xl font-semibold leading-tight mb-8">
+                Designed for Scale.
+              </h2>
 
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Workflow Monitoring</p>
+              <p className="text-xl text-zinc-600 leading-relaxed mb-10">
+                Bankruptcy Control gives operations teams the tools to manage
+                complexity, reduce risk, and deliver consistent outcomes at
+                enterprise scale.
+              </p>
 
-                        <p className="text-gray-500">Updated</p>
-                      </div>
-
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[60%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
-
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Portfolio Visibility</p>
-
-                        <p className="text-gray-500">Synced</p>
-                      </div>
-
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[85%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="space-y-4 text-lg text-zinc-700">
+                <div>✓ Scalable infrastructure</div>
+                <div>✓ High-volume performance</div>
+                <div>✓ Configurable to your processes</div>
+                <div>✓ Reliable, secure, and always on</div>
               </div>
             </div>
+
+            {/* RIGHT */}
+            <div>
+              <div className="rounded-[34px] overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.20)]">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
+                  alt="Operations Team"
+                  className="w-full h-[520px] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#050816]">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-14">
+          <div className="bg-white/5 border border-white/10 rounded-[34px] px-8 md:px-12 py-10 flex flex-col lg:flex-row gap-8 items-center justify-between">
+            <div className="flex items-center gap-6">
+              <div className="w-16 h-16 rounded-3xl bg-white/10 border border-white/10" />
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold mb-2">
+                  Transform the way you manage operations.
+                </h3>
+
+                <p className="text-zinc-400 text-lg">
+                  See how Bankruptcy Control can streamline your servicing
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="/#contact"
+              className="inline-flex items-center bg-white text-black px-7 py-4 rounded-2xl text-lg font-medium hover:bg-zinc-200 transition"
+            >
+              Contact Us →
+            </a>
           </div>
         </div>
       </section>

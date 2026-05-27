@@ -1,207 +1,171 @@
 export default function CapabilitiesPage() {
   return (
-    <main className="bg-white text-gray-900 overflow-hidden">
+    <main className="bg-[#f5f5f4] text-white overflow-hidden">
       {/* HERO */}
-      <section className="relative bg-[#020817] text-white pt-32 pb-28 px-6 md:px-8 overflow-hidden">
-        <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.20),transparent_45%)]" />
+      <section className="relative overflow-hidden bg-[#050816] border-b border-white/5">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.16),transparent_40%)] opacity-70" />
 
-        <div className="relative max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT */}
-          <div>
-            <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
-              Capabilities
-            </p>
+        <div className="relative max-w-[1600px] mx-auto px-6 md:px-10 pt-10 pb-20">
+          {/* Breadcrumbs */}
+          <div className="mb-16 flex items-center gap-4 text-base md:text-lg text-zinc-400">
+            <a href="/" className="hover:text-white transition">
+              Home
+            </a>
 
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] mb-8">
-              Visibility, Reporting, and Operational Intelligence
-            </h1>
+            <span>/</span>
 
-            <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-2xl mb-10">
-              Advanced workflow visibility, reporting systems, operational
-              analytics, and centralized monitoring designed to support complex
-              servicing environments.
-            </p>
+            <a href="/#platform" className="hover:text-white transition">
+              Platform
+            </a>
 
-            <div className="flex flex-wrap gap-4">
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Operational Analytics
-              </div>
+            <span>/</span>
 
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Reporting Visibility
-              </div>
-
-              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
-                Monitoring Systems
-              </div>
-            </div>
+            <span className="text-white font-medium">Capabilities</span>
           </div>
 
-          {/* RIGHT */}
-          <div className="relative">
-            <div className="bg-white/10 rounded-[36px] shadow-2xl overflow-hidden min-h-105 p-8 md:p-10 border border-white/10 backdrop-blur-xl">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Reporting Dashboard
-                  </p>
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
+            {/* LEFT */}
+            <div>
+              <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.02] mb-8 max-w-3xl">
+                Powerful Capabilities.
+                <br />
+                Built for Servicing Excellence.
+              </h1>
 
-                  <h3 className="text-2xl font-semibold">
-                    Operational Visibility Metrics
-                  </h3>
-                </div>
+              <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-2xl mb-10">
+                From advanced analytics to workflow automation, Bankruptcy
+                Control delivers the capabilities your team needs to operate
+                smarter and faster.
+              </p>
 
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/20 border border-blue-400/20" />
+              <a
+                href="/#contact"
+                className="inline-flex items-center bg-white text-black px-7 py-4 rounded-2xl text-lg font-medium hover:bg-zinc-200 transition"
+              >
+                Contact Us →
+              </a>
+            </div>
+
+            {/* RIGHT */}
+            <div className="rounded-[34px] overflow-hidden border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+              <img
+                src="/images/platform/capabilities-dashboard.jpg"
+                alt="Capabilities Dashboard"
+                className="w-full h-[620px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CAPABILITY GRID */}
+      <section className="bg-[#0A0E1A] border-b border-white/5">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20">
+          <p className="text-yellow-400 uppercase tracking-[0.16em] text-sm font-medium mb-10">
+            Our Core Capabilities
+          </p>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Advanced Analytics",
+                text: "Turn data into insights with powerful analytics and custom reporting tools.",
+              },
+              {
+                title: "Workflow Automation",
+                text: "Automate tasks and processes to increase efficiency and reduce risk.",
+              },
+              {
+                title: "Reporting & Dashboards",
+                text: "Real-time dashboards and configurable reports deliver actionable visibility.",
+              },
+              {
+                title: "System Integration",
+                text: "Seamlessly integrate with your core systems and third-party applications.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-white/5 border border-white/10 rounded-[30px] p-8 hover:-translate-y-2 hover:bg-white/[0.07] transition-all duration-700"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 mb-8" />
+
+                <h3 className="text-2xl font-semibold mb-5">{item.title}</h3>
+
+                <p className="text-zinc-400 text-lg leading-relaxed">
+                  {item.text}
+                </p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-              {/* Chart */}
-              <div className="bg-black/30 rounded-3xl border border-white/5 p-6 mb-6">
-                <div className="flex items-end justify-between gap-3 h-52">
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[45%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[62%]" />
-                  <div className="w-full bg-blue-400/40 rounded-t-3xl h-[88%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[58%]" />
-                  <div className="w-full bg-white/10 rounded-t-3xl h-[76%]" />
-                </div>
-              </div>
+      {/* CONFIGURE */}
+      <section className="bg-[#f5f5f4] text-black">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-24">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+            <div className="rounded-[34px] overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.20)]">
+              <img
+                src="/images/platform/capabilities-workflow.jpg"
+                alt="Workflow"
+                className="w-full h-[520px] object-cover"
+              />
+            </div>
 
-              {/* Bottom Cards */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Reports Generated
-                  </p>
+            <div>
+              <p className="text-yellow-700 uppercase tracking-[0.16em] text-sm font-medium mb-6">
+                Built to Adapt
+              </p>
 
-                  <p className="text-2xl font-semibold">2.1K</p>
-                </div>
+              <h2 className="text-5xl md:text-6xl font-semibold leading-tight mb-8">
+                Configure.
+                <br />
+                Customize.
+                <br />
+                Optimize.
+              </h2>
 
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Monitoring Events
-                  </p>
+              <p className="text-xl text-zinc-600 leading-relaxed mb-10">
+                Every organization operates differently. Our platform is built
+                to adapt to your processes, operational requirements, and
+                workflow structure.
+              </p>
 
-                  <p className="text-2xl font-semibold">7.8K</p>
-                </div>
-
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
-                  <p className="text-zinc-400 text-sm mb-2">
-                    Active Dashboards
-                  </p>
-
-                  <p className="text-2xl font-semibold">48</p>
-                </div>
+              <div className="space-y-4 text-lg text-zinc-700">
+                <div>✓ Flexible configuration</div>
+                <div>✓ Role-based access</div>
+                <div>✓ Business rule engine</div>
+                <div>✓ Scalable as you grow</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
-      <section className="py-28 md:py-36 px-6 md:px-8 bg-white">
-        <div className="max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
-          {/* LEFT */}
-          <div>
-            <p className="text-blue-700 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
-              Operational Reporting
-            </p>
+      {/* STATS */}
+      <section className="bg-white text-black border-t border-gray-200">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20">
+          <p className="text-yellow-700 uppercase tracking-[0.16em] text-sm font-medium mb-10">
+            Capabilities That Drive Results
+          </p>
 
-            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-8">
-              Centralized Visibility Across Operational Workflows
-            </h2>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {[
+              ["35%", "Increase in Operational Efficiency"],
+              ["50%", "Reduction in Manual Processes"],
+              ["99.9%", "System Uptime Reliability"],
+              ["100+", "System Integrations Supported"],
+            ].map(([number, label]) => (
+              <div
+                key={number}
+                className="bg-[#f5f5f4] border border-gray-200 rounded-[28px] p-10"
+              >
+                <div className="text-5xl font-semibold mb-4">{number}</div>
 
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8">
-              Reporting systems and operational analytics designed to improve
-              visibility into servicing workflows, monitoring activity, and
-              portfolio operations.
-            </p>
-
-            <div className="space-y-5">
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Centralized operational dashboards
-                </p>
+                <p className="text-lg text-zinc-600 leading-relaxed">{label}</p>
               </div>
-
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Monitoring visibility and reporting systems
-                </p>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Portfolio analytics and workflow insights
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT */}
-          <div className="relative">
-            <div className="rounded-[36px] overflow-hidden shadow-2xl border border-gray-200 bg-gray-50 min-h-110 flex items-center justify-center p-10">
-              <div className="w-full max-w-xl">
-                <div className="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
-                  <div className="px-6 py-5 border-b border-gray-100 flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-gray-500 mb-1">
-                        Reporting Queue
-                      </p>
-
-                      <h3 className="text-xl font-semibold">
-                        Monitoring Activity
-                      </h3>
-                    </div>
-
-                    <div className="w-10 h-10 rounded-2xl bg-gray-100" />
-                  </div>
-
-                  <div className="p-6 space-y-4">
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Portfolio Reporting</p>
-
-                        <p className="text-gray-500">Active</p>
-                      </div>
-
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[82%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
-
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Monitoring Visibility</p>
-
-                        <p className="text-gray-500">Synced</p>
-                      </div>
-
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[68%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
-
-                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Workflow Analytics</p>
-
-                        <p className="text-gray-500">Updated</p>
-                      </div>
-
-                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div className="w-[90%] h-full bg-black rounded-full" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
