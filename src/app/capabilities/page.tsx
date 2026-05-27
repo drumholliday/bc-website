@@ -12,7 +12,7 @@ export default function CapabilitiesPage() {
             Platform Capabilities
           </h1>
 
-          <p className="text-xl text-zinc-300 max-w-5xl leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-4xl leading-relaxed">
             Operational platform functionality designed to improve workflow
             visibility, compliance, reporting, integrations, and centralized
             management across bankruptcy operations.

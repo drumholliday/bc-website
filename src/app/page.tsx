@@ -277,66 +277,114 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="h-px bg-gray-200 mb-16" />
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+              Product Features
+            </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
-                A Complete Platform for Bankruptcy Case Management
-              </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Bankruptcy Control provides centralized operational tools designed
+              to support bankruptcy workflows, monitoring, reporting,
+              integrations, and servicing coordination.
+            </p>
+          </div>
 
-              <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                Bankruptcy Control provides a centralized system for managing
-                bankrupt accounts, tracking claims, ensuring compliance, and
-                integrating with key data sources.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            {/* DOCUMENT GENERATION */}
+            <a
+              href="/document-generation"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-950 to-blue-700" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
-                {[
-                  "Automated document generation",
-                  "Real-time bankruptcy tracking",
-                  "System integrations",
-                  "Workflow management tools",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-3 bg-gray-50 rounded-xl p-6"
-                  >
-                    <span className="text-green-500 mt-1 text-xl">✔</span>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Automated Document Generation
+                </h3>
 
-                    <p className="font-medium text-lg">{item}</p>
-                  </div>
-                ))}
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Generate operational bankruptcy-related documents, workflow
+                  notices, and reporting materials through centralized workflow
+                  systems.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
               </div>
-            </div>
+            </a>
 
-            <div className="bg-gray-900 rounded-2xl shadow-2xl p-6 md:p-10 text-white">
-              <p className="text-base text-gray-300 mb-8">
-                Bankruptcy Control Dashboard
-              </p>
+            {/* BANKRUPTCY TRACKING */}
+            <a
+              href="/bankruptcy-tracking"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-700 to-blue-950" />
 
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gray-800 p-5 md:p-8 rounded-xl">
-                  <p className="text-sm text-gray-300">Active Cases</p>
-                  <p className="text-4xl font-bold">1,248</p>
-                </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Real-Time Bankruptcy Tracking
+                </h3>
 
-                <div className="bg-gray-800 p-5 md:p-8 rounded-xl">
-                  <p className="text-sm text-gray-300">Claims Filed</p>
-                  <p className="text-4xl font-bold">3,912</p>
-                </div>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Monitor bankruptcy activity, account updates, operational
+                  changes, and servicing workflows through centralized
+                  visibility systems.
+                </p>
 
-                <div className="bg-gray-800 p-5 md:p-8 rounded-xl">
-                  <p className="text-sm text-gray-300">Compliance Alerts</p>
-                  <p className="text-4xl font-bold text-yellow-400">12</p>
-                </div>
-
-                <div className="bg-gray-800 p-5 md:p-8 rounded-xl">
-                  <p className="text-sm text-gray-300">Payments Tracked</p>
-                  <p className="text-4xl font-bold text-green-300">$2.4M</p>
-                </div>
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
               </div>
-            </div>
+            </a>
+
+            {/* INTEGRATIONS */}
+            <a
+              href="/integrations"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-800 to-blue-950" />
+
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  System Integrations
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Connect operational workflows, monitoring systems, servicing
+                  platforms, and centralized reporting through integrated
+                  platform architecture.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
+
+            {/* WORKFLOW MANAGEMENT */}
+            <a
+              href="/workflow-management"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-900 to-blue-700" />
+
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Workflow Management
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Coordinate operational tasks, monitoring activity, reporting
+                  workflows, and centralized servicing operations across account
+                  portfolios.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </motion.section>
@@ -452,126 +500,112 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+              Industries
+            </h2>
 
-  <div className="text-center mb-16">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Bankruptcy Control supports operational workflows across
+              servicing, legal, compliance, and bankruptcy-related organizations
+              managing complex account portfolios.
+            </p>
+          </div>
 
-    <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-      Industries
-    </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            {/* LOAN SERVICERS */}
+            <a
+              href="/servicers"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-950 to-blue-700" />
 
-    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-      Bankruptcy Control supports operational workflows across
-      servicing, legal, compliance, and bankruptcy-related organizations
-      managing complex account portfolios.
-    </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Loan Servicers
+                </h3>
 
-  </div>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Bankruptcy servicing workflows, portfolio visibility,
+                  operational coordination, and monitoring systems.
+                </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
 
-    {/* LOAN SERVICERS */}
-    <a
-      href="/servicers"
-      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
-    >
-      <div className="h-40 bg-linear-to-br from-blue-950 to-blue-700" />
+            {/* CREDITORS */}
+            <a
+              href="/creditors"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-700 to-blue-950" />
 
-      <div className="p-8">
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Creditors
+                </h3>
 
-        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-          Loan Servicers
-        </h3>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Claims visibility, compliance workflows, bankruptcy tracking,
+                  and operational oversight.
+                </p>
 
-        <p className="text-gray-600 leading-relaxed text-lg">
-          Bankruptcy servicing workflows, portfolio visibility,
-          operational coordination, and monitoring systems.
-        </p>
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
 
-        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-          Learn More →
-        </p>
+            {/* COLLECTION AGENCIES */}
+            <a
+              href="/collections"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-800 to-blue-950" />
 
-      </div>
-    </a>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Collection Agencies
+                </h3>
 
-    {/* CREDITORS */}
-    <a
-      href="/creditors"
-      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
-    >
-      <div className="h-40 bg-linear-to-br from-blue-700 to-blue-950" />
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Bankruptcy-related workflow visibility, monitoring systems,
+                  and operational coordination.
+                </p>
 
-      <div className="p-8">
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More→
+                </p>
+              </div>
+            </a>
 
-        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-          Creditors
-        </h3>
+            {/* BANKRUPTCY COUNSEL */}
+            <a
+              href="/counsel"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-40 bg-linear-to-br from-blue-900 to-blue-700" />
 
-        <p className="text-gray-600 leading-relaxed text-lg">
-          Claims visibility, compliance workflows,
-          bankruptcy tracking, and operational oversight.
-        </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Bankruptcy Counsel
+                </h3>
 
-        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-          Learn More →
-        </p>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Case coordination, operational workflows, servicing
+                  communication, and portfolio visibility.
+                </p>
 
-      </div>
-    </a>
-
-    {/* COLLECTION AGENCIES */}
-    <a
-      href="/collections"
-      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
-    >
-      <div className="h-40 bg-linear-to-br from-blue-800 to-blue-950" />
-
-      <div className="p-8">
-
-        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-          Collection Agencies
-        </h3>
-
-        <p className="text-gray-600 leading-relaxed text-lg">
-          Bankruptcy-related workflow visibility,
-          monitoring systems, and operational coordination.
-        </p>
-
-        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-          Learn More→
-        </p>
-
-      </div>
-    </a>
-
-    {/* BANKRUPTCY COUNSEL */}
-    <a
-      href="/counsel"
-      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
-    >
-      <div className="h-40 bg-linear-to-br from-blue-900 to-blue-700" />
-
-      <div className="p-8">
-
-        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-          Bankruptcy Counsel
-        </h3>
-
-        <p className="text-gray-600 leading-relaxed text-lg">
-          Case coordination, operational workflows,
-          servicing communication, and portfolio visibility.
-        </p>
-
-        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-          Learn More →
-        </p>
-
-      </div>
-    </a>
-
-  </div>
-
-</div>
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
       </motion.section>
 
       {/* Gradient Divide White to Gray */}
