@@ -14,9 +14,14 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-sm px-6 md:px-10 py-5">
         <div className="flex items-center justify-between">
           {/* LOGO */}
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Bankruptcy Control™
-          </h1>
+        <Image
+          src="/images/bc-logo-white.png"
+          alt="Bankruptcy Control"
+          width={420}
+          height={120}
+          priority
+          className="h-20 md:h-24 w-auto object-contain"
+        />
 
           {/* DESKTOP NAV */}
           <div className="hidden xl:flex gap-6 md:gap-8 text-lg md:text-xl font-medium items-center">
