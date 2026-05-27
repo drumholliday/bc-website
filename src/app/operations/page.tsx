@@ -1,6 +1,7 @@
 export default function OperationsPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    // <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    <main className="min-h-screen bg-white text-gray-900 py-24 px-6">
 
       <div className="max-w-7xl mx-auto">
 
@@ -11,7 +12,7 @@ export default function OperationsPage() {
             Bankruptcy Operations
           </h1>
 
-          <p className="text-xl text-zinc-300 max-w-4xl leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-4xl leading-relaxed">
             Operational workflows designed to support bankruptcy
             monitoring, servicing coordination, portfolio visibility,
             compliance activity, and centralized account management.

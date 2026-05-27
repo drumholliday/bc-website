@@ -1,6 +1,7 @@
 export default function CapabilitiesPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    // <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    <main className="min-h-screen bg-white text-gray-900 py-24 px-6">
 
       <div className="max-w-[1400px] mx-auto">
 

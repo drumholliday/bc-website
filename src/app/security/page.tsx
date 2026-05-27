@@ -1,6 +1,7 @@
 export default function SecurityPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    // <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
+    <main className="min-h-screen bg-white text-gray-900 py-24 px-6">
 
       <div className="max-w-[1400px] mx-auto">
 
@@ -11,7 +12,7 @@ export default function SecurityPage() {
             Security & Infrastructure
           </h1>
 
-          <p className="text-xl text-zinc-300 max-w-5xl leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-5xl leading-relaxed">
             Operational infrastructure, workflow continuity,
             hosted environments, and centralized systems
             designed to support reliable bankruptcy operations.

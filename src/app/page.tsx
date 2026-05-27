@@ -14,22 +14,28 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-sm px-6 md:px-10 py-5">
         <div className="flex items-center justify-between">
           {/* LOGO */}
-        <Image
-          src="/images/bc-logo-white.png"
-          alt="Bankruptcy Control"
-          width={420}
-          height={120}
-          priority
-          className="h-20 md:h-24 w-auto object-contain"
-        />
+          <Image
+            src="/images/bc-logo-white.png"
+            alt="Bankruptcy Control"
+            width={420}
+            height={120}
+            priority
+            className="h-20 md:h-24 w-auto object-contain"
+          />
 
           {/* DESKTOP NAV */}
           <div className="hidden xl:flex gap-6 md:gap-8 text-lg md:text-xl font-medium items-center">
-            <a href="#home" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#home"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               Home
             </a>
 
-            <a href="#product"className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#product"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               Product
             </a>
 
@@ -47,19 +53,31 @@ export default function Home() {
               Industries
             </a>
 
-            <a href="#about" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#about"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               About
             </a>
 
-            <a href="#trust" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#trust"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               Trusted
             </a>
 
-            <a href="#faq" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#faq"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               FAQ
             </a>
 
-            <a href="#contact" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <a
+              href="#contact"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
               Contact
             </a>
 
@@ -197,12 +215,12 @@ export default function Home() {
               structures.
             </p>
 
-            <a
+            {/* <a
               href="#contact"
               className="inline-block bg-white text-blue-900 px-8 py-4 rounded font-semibold text-lg hover:bg-gray-100 transition"
             >
               Schedule a Demo →
-            </a>
+            </a> */}
           </div>
 
           {/* RIGHT */}
@@ -248,7 +266,6 @@ export default function Home() {
 
       {/* Gradient Divide Blue to Gray */}
       {/* <div className="h-24 bg-gradient-to-b from-blue-900 to-gray-50" /> */}
-
 
       {/* PRODUCT */}
       <motion.section
@@ -324,173 +341,241 @@ export default function Home() {
         </div>
       </motion.section>
 
-{/* Gradient Divide White to Gray */}
-<div className="h-16 bg-linear-to-b from-white to-gray-50" />
+      {/* Gradient Divide White to Gray */}
+      <div className="h-16 bg-linear-to-b from-white to-gray-50" />
 
-{/* PLATFORM OVERVIEW */}
-<motion.section
-  id="platform"
-  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Platform Overview
-      </h2>
-
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control combines operational workflows,
-        compliance visibility, reporting systems, and secure
-        infrastructure into a centralized bankruptcy operations platform.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      {/* OPERATIONS */}
-      <a
-        href="/operations"
-        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+      {/* PLATFORM OVERVIEW */}
+      <motion.section
+        id="platform"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="h-48 bg-linear-to-br from-blue-950 to-blue-700" />
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+              Platform Overview
+            </h2>
 
-        <div className="p-8">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-            Operations
-          </h3>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Bankruptcy Control combines operational workflows, compliance
+              visibility, reporting systems, and secure infrastructure into a
+              centralized bankruptcy operations platform.
+            </p>
+          </div>
 
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Bankruptcy workflow coordination, operational visibility,
-            account tracking, and centralized servicing operations.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* OPERATIONS */}
+            <a
+              href="/operations"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-48 bg-linear-to-br from-blue-950 to-blue-700" />
 
-          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-            Explore Operations →
-          </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Operations
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Bankruptcy workflow coordination, operational visibility,
+                  account tracking, and centralized servicing operations.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
+
+            {/* CAPABILITIES */}
+            <a
+              href="/capabilities"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-48 bg-linear-to-br from-blue-700 to-blue-950" />
+
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Platform Capabilities
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Reporting systems, integrations, compliance workflows,
+                  monitoring tools, and operational platform functionality.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More →
+                </p>
+              </div>
+            </a>
+
+            {/* SECURITY */}
+            <a
+              href="/security"
+              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            >
+              <div className="h-48 bg-linear-to-br from-blue-800 to-blue-950" />
+
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  Security & Infrastructure
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Hosted operational environments, workflow continuity, access
+                  visibility, and infrastructure reliability systems.
+                </p>
+
+                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+                  Learn More→
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-      </a>
+      </motion.section>
 
-      {/* CAPABILITIES */}
-      <a
-        href="/capabilities"
-        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+      {/* Gradient Divide White to Gray */}
+      {/* <div className="h-16 bg-linear-to-b from-white to-gray-50" /> */}
+
+      {/* Industries */}
+      <motion.section
+        id="industries"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="h-48 bg-linear-to-br from-blue-700 to-blue-950" />
+        <div className="max-w-7xl mx-auto">
 
-        <div className="p-8">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-            Platform Capabilities
-          </h3>
+  <div className="text-center mb-16">
 
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Reporting systems, integrations, compliance workflows,
-            monitoring tools, and operational platform functionality.
-          </p>
+    <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+      Industries
+    </h2>
 
-          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-            Explore Capabilities →
-          </p>
-        </div>
-      </a>
+    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      Bankruptcy Control supports operational workflows across
+      servicing, legal, compliance, and bankruptcy-related organizations
+      managing complex account portfolios.
+    </p>
 
-      {/* SECURITY */}
-      <a
-        href="/security"
-        className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
-      >
-        <div className="h-48 bg-linear-to-br from-blue-800 to-blue-950" />
-
-        <div className="p-8">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-            Security & Infrastructure
-          </h3>
-
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Hosted operational environments, workflow continuity,
-            access visibility, and infrastructure reliability systems.
-          </p>
-
-          <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-            Explore Security →
-          </p>
-        </div>
-      </a>
-    </div>
   </div>
-</motion.section>
 
-{/* Gradient Divide White to Gray */}
-{/* <div className="h-16 bg-linear-to-b from-white to-gray-50" /> */}
+  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
-{/* Industries */}
-<motion.section
-  id="industries"
-  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-        Industries
-      </h2>
+    {/* LOAN SERVICERS */}
+    <a
+      href="/servicers"
+      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+    >
+      <div className="h-40 bg-linear-to-br from-blue-950 to-blue-700" />
 
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Bankruptcy Control supports operational workflows across servicing,
-        legal, compliance, and bankruptcy-related organizations managing
-        complex account portfolios.
-      </p>
-    </div>
+      <div className="p-8">
 
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
-      {[
-        {
-          title: "Loan Servicers",
-          description:
-            "Support bankruptcy monitoring, payment tracking, reporting, and operational workflows across servicing portfolios.",
-        },
-        {
-          title: "Creditors",
-          description:
-            "Improve visibility into bankruptcy activity, claims management, compliance processes, and account oversight.",
-        },
-        {
-          title: "Collection Agencies",
-          description:
-            "Manage bankruptcy-related account activity while supporting operational controls and compliance requirements.",
-        },
-        {
-          title: "Bankruptcy Counsel",
-          description:
-            "Coordinate workflows, documents, notes, and case activity across assigned bankruptcy matters and portfolios.",
-        },
-      ].map((item) => (
-        <div
-          key={item.title}
-          className="bg-gray-50 rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
-        >
-          <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-            {item.title}
-          </h3>
+        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+          Loan Servicers
+        </h3>
 
-          <p className="text-gray-700 text-lg leading-relaxed">
-            {item.description}
-          </p>
-        </div>
-      ))}
-    </div>
+        <p className="text-gray-600 leading-relaxed text-lg">
+          Bankruptcy servicing workflows, portfolio visibility,
+          operational coordination, and monitoring systems.
+        </p>
+
+        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+          Learn More →
+        </p>
+
+      </div>
+    </a>
+
+    {/* CREDITORS */}
+    <a
+      href="/creditors"
+      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+    >
+      <div className="h-40 bg-linear-to-br from-blue-700 to-blue-950" />
+
+      <div className="p-8">
+
+        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+          Creditors
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed text-lg">
+          Claims visibility, compliance workflows,
+          bankruptcy tracking, and operational oversight.
+        </p>
+
+        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+          Learn More →
+        </p>
+
+      </div>
+    </a>
+
+    {/* COLLECTION AGENCIES */}
+    <a
+      href="/collections"
+      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+    >
+      <div className="h-40 bg-linear-to-br from-blue-800 to-blue-950" />
+
+      <div className="p-8">
+
+        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+          Collection Agencies
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed text-lg">
+          Bankruptcy-related workflow visibility,
+          monitoring systems, and operational coordination.
+        </p>
+
+        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+          Learn More→
+        </p>
+
+      </div>
+    </a>
+
+    {/* BANKRUPTCY COUNSEL */}
+    <a
+      href="/counsel"
+      className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+    >
+      <div className="h-40 bg-linear-to-br from-blue-900 to-blue-700" />
+
+      <div className="p-8">
+
+        <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+          Bankruptcy Counsel
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed text-lg">
+          Case coordination, operational workflows,
+          servicing communication, and portfolio visibility.
+        </p>
+
+        <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
+          Learn More →
+        </p>
+
+      </div>
+    </a>
+
   </div>
-</motion.section>
 
-{/* Gradient Divide White to Gray */}
-<div className="h-16 bg-linear-to-b from-white to-gray-50" />
+</div>
+      </motion.section>
 
+      {/* Gradient Divide White to Gray */}
+      <div className="h-16 bg-linear-to-b from-white to-gray-50" />
 
       {/* ABOUT */}
       <motion.section
@@ -572,7 +657,6 @@ export default function Home() {
               height={140}
               className="h-28 md:h-32 w-auto object-contain mx-auto mb-4"
             />
-            
 
             <p className="text-2xl text-gray-700 font-medium">
               Veteran Owned Business
@@ -671,118 +755,119 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="max-w-4xl mx-auto">
-  <div className="text-center mb-14">
-    <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-      Schedule a Demo
-    </h2>
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+              Schedule a Demo
+            </h2>
 
-    <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
-      Learn how Bankruptcy Control helps creditors and servicing organizations
-      improve operational visibility, strengthen compliance workflows, and
-      manage bankruptcy accounts more efficiently.
-    </p>
-  </div>
+            <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+              Learn how Bankruptcy Control helps creditors and servicing
+              organizations improve operational visibility, strengthen
+              compliance workflows, and manage bankruptcy accounts more
+              efficiently.
+            </p>
+          </div>
 
-  <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-10">
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
-      className="space-y-6"
-    >
-      {submitted && (
-        <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-6 py-4 text-center font-medium">
-          Thank you! We’ll be in touch shortly.
+          <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-10">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setSubmitted(true);
+              }}
+              className="space-y-6"
+            >
+              {submitted && (
+                <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-6 py-4 text-center font-medium">
+                  Thank you! We’ll be in touch shortly.
+                </div>
+              )}
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    htmlFor="fullName"
+                    className="block text-lg font-medium text-gray-700 mb-2"
+                  >
+                    Full Name *
+                  </label>
+
+                  <input
+                    id="fullName"
+                    name="fullName"
+                    type="text"
+                    placeholder="John Smith"
+                    className="w-full border border-gray-300 rounded-xl px-5 py-4 text-gray-900 placeholder:text-gray-400 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-lg font-medium text-gray-700 mb-2"
+                  >
+                    Email Address *
+                  </label>
+
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="name@company.com"
+                    className="w-full border border-gray-300 text-gray-900 placeholder:text-gray-400 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="company"
+                  className="block text-lg font-medium text-gray-700 mb-2"
+                >
+                  Company
+                </label>
+
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  placeholder="Company Name"
+                  className="w-full border border-gray-300 text-gray-900 placeholder:text-gray-400 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Tell Us About Your Needs
+                </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Briefly describe your organization, current workflow, or what you're looking to improve..."
+                  className="w-full border border-gray-300 text-gray-900 placeholder:text-gray-400 rounded-xl px-5 py-4 text-base md:text-lg min-h-45 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
+                  rows={6}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-blue-900 text-white py-4 md:py-5 rounded-xl font-semibold text-lg md:text-xl hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+              >
+                Request Demo
+              </button>
+
+              <p className="text-lg text-gray-500 text-center leading-relaxed">
+                By submitting this form, you agree to be contacted regarding
+                Bankruptcy Control products and services.
+              </p>
+            </form>
+          </div>
         </div>
-      )}
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <div>
-          <label
-            htmlFor="fullName"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
-            Full Name *
-          </label>
-
-          <input
-            id="fullName"
-            name="fullName"
-            type="text"
-            placeholder="John Smith"
-            className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
-            required
-          />
-        </div>
-
-        <div>
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
-            Email Address *
-          </label>
-
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="name@company.com"
-            className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
-            required
-          />
-        </div>
-      </div>
-
-      <div>
-        <label
-          htmlFor="company"
-          className="block text-sm font-medium text-gray-700 mb-2"
-        >
-          Company
-        </label>
-
-        <input
-          id="company"
-          name="company"
-          type="text"
-          placeholder="Company Name"
-          className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-gray-700 mb-2"
-        >
-          Tell Us About Your Needs
-        </label>
-
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Briefly describe your organization, current workflow, or what you're looking to improve..."
-          className="w-full border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg min-h-45 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
-          rows={6}
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-blue-900 text-white py-4 md:py-5 rounded-xl font-semibold text-lg md:text-xl hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-      >
-        Request Demo
-      </button>
-
-      <p className="text-sm text-gray-500 text-center leading-relaxed">
-        By submitting this form, you agree to be contacted regarding
-        Bankruptcy Control products and services.
-      </p>
-    </form>
-  </div>
-</div>
       </motion.section>
 
       {/* FOOTER */}
