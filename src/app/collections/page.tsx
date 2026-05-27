@@ -3,7 +3,7 @@ export default function CollectionsPage() {
     // <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
     <main className="min-h-screen bg-white text-gray-900 py-24 px-6">
 
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1500px] mx-auto">
 
         <div className="mb-20">
 
@@ -11,7 +11,7 @@ export default function CollectionsPage() {
             Collection Agencies
           </h1>
 
-          <p className="text-xl text-zinc-900 max-w-5xl leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-5xl leading-relaxed">
             Operational systems supporting bankruptcy-related workflows,
             monitoring visibility, compliance coordination,
             and centralized operational management.
