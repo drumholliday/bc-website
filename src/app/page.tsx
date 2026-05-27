@@ -424,7 +424,7 @@ export default function Home() {
 </motion.section>
 
 {/* Gradient Divide White to Gray */}
-<div className="h-16 bg-linear-to-b from-white to-gray-50" />
+{/* <div className="h-16 bg-linear-to-b from-white to-gray-50" /> */}
 
 {/* Industries */}
 <motion.section
