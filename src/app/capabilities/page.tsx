@@ -1,217 +1,210 @@
 export default function CapabilitiesPage() {
   return (
-    // <main className="min-h-screen bg-zinc-950 text-white py-24 px-6">
-    <main className="min-h-screen bg-white text-gray-900 py-24 px-6">
+    <main className="bg-white text-gray-900 overflow-hidden">
+      {/* HERO */}
+      <section className="relative bg-[#020817] text-white pt-32 pb-28 px-6 md:px-8 overflow-hidden">
+        <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.20),transparent_45%)]" />
 
-      <div className="max-w-[1400px] mx-auto">
+        <div className="relative max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          {/* LEFT */}
+          <div>
+            <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
+              Capabilities
+            </p>
 
-        {/* HEADER */}
-        <div className="mb-20">
+            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] mb-8">
+              Visibility, Reporting, and Operational Intelligence
+            </h1>
 
-          <h1 className="text-5xl font-bold mb-6">
-            Platform Capabilities
-          </h1>
+            <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-2xl mb-10">
+              Advanced workflow visibility, reporting systems, operational
+              analytics, and centralized monitoring designed to support complex
+              servicing environments.
+            </p>
 
-          <p className="text-xl text-gray-700 max-w-4xl leading-relaxed">
-            Operational platform functionality designed to improve workflow
-            visibility, compliance, reporting, integrations, and centralized
-            management across bankruptcy operations.
-          </p>
+            <div className="flex flex-wrap gap-4">
+              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
+                Operational Analytics
+              </div>
 
+              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
+                Reporting Visibility
+              </div>
+
+              <div className="px-5 py-3 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-zinc-200">
+                Monitoring Systems
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="relative">
+            <div className="bg-white/10 rounded-[36px] shadow-2xl overflow-hidden min-h-105 p-8 md:p-10 border border-white/10 backdrop-blur-xl">
+              {/* Header */}
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <p className="text-zinc-400 text-sm mb-2">
+                    Reporting Dashboard
+                  </p>
+
+                  <h3 className="text-2xl font-semibold">
+                    Operational Visibility Metrics
+                  </h3>
+                </div>
+
+                <div className="w-12 h-12 rounded-2xl bg-blue-500/20 border border-blue-400/20" />
+              </div>
+
+              {/* Chart */}
+              <div className="bg-black/30 rounded-3xl border border-white/5 p-6 mb-6">
+                <div className="flex items-end justify-between gap-3 h-52">
+                  <div className="w-full bg-white/10 rounded-t-3xl h-[45%]" />
+                  <div className="w-full bg-white/10 rounded-t-3xl h-[62%]" />
+                  <div className="w-full bg-blue-400/40 rounded-t-3xl h-[88%]" />
+                  <div className="w-full bg-white/10 rounded-t-3xl h-[58%]" />
+                  <div className="w-full bg-white/10 rounded-t-3xl h-[76%]" />
+                </div>
+              </div>
+
+              {/* Bottom Cards */}
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
+                  <p className="text-zinc-400 text-sm mb-2">
+                    Reports Generated
+                  </p>
+
+                  <p className="text-2xl font-semibold">2.1K</p>
+                </div>
+
+                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
+                  <p className="text-zinc-400 text-sm mb-2">
+                    Monitoring Events
+                  </p>
+
+                  <p className="text-2xl font-semibold">7.8K</p>
+                </div>
+
+                <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
+                  <p className="text-zinc-400 text-sm mb-2">
+                    Active Dashboards
+                  </p>
+
+                  <p className="text-2xl font-semibold">48</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* CAPABILITIES GRID */}
-        <div className="grid md:grid-cols-3 gap-12">
-
-          {/* REPORTING */}
-          <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-12 shadow-2xl">
-
-            <h2 className="text-3xl font-bold mb-8 text-blue-300">
-              Reporting Systems
-            </h2>
-
-            <p className="text-zinc-300 leading-relaxed mb-10 text-lg">
-              Operational reporting, compliance visibility,
-              monitoring systems, and portfolio-level
-              analytics workflows.
+      {/* OVERVIEW */}
+      <section className="py-28 md:py-36 px-6 md:px-8 bg-white">
+        <div className="max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
+          {/* LEFT */}
+          <div>
+            <p className="text-blue-700 uppercase tracking-[0.18em] text-sm font-semibold mb-6">
+              Operational Reporting
             </p>
 
-            <div className="space-y-10 text-zinc-300">
+            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-8">
+              Centralized Visibility Across Operational Workflows
+            </h2>
 
-              <div>
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8">
+              Reporting systems and operational analytics designed to improve
+              visibility into servicing workflows, monitoring activity, and
+              portfolio operations.
+            </p>
 
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Core Areas
-                </h3>
+            <div className="space-y-5">
+              <div className="flex gap-4">
+                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
 
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Operational reporting and dashboards</li>
-                  <li>• Compliance activity visibility</li>
-                  <li>• Portfolio-level analytics</li>
-                  <li>• Real-time monitoring systems</li>
-                </ul>
-
-              </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Reporting Capabilities
-                </h3>
-
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Operational performance metrics</li>
-                  <li>• Monitoring and activity reporting</li>
-                  <li>• Workflow visibility systems</li>
-                  <li>• Centralized reporting coordination</li>
-                </ul>
-
-              </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Operational Value
-                </h3>
-
-                <p className="text-zinc-300 leading-relaxed">
-                  Improved reporting visibility, operational
-                  monitoring, and centralized insight into
-                  bankruptcy-related workflows and activity.
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                  Centralized operational dashboards
                 </p>
-
               </div>
 
+              <div className="flex gap-4">
+                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
+
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                  Monitoring visibility and reporting systems
+                </p>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-3 h-3 rounded-full bg-blue-600 mt-3" />
+
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                  Portfolio analytics and workflow insights
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* INTEGRATIONS */}
-          <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-12 shadow-2xl">
+          {/* RIGHT */}
+          <div className="relative">
+            <div className="rounded-[36px] overflow-hidden shadow-2xl border border-gray-200 bg-gray-50 min-h-110 flex items-center justify-center p-10">
+              <div className="w-full max-w-xl">
+                <div className="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                  <div className="px-6 py-5 border-b border-gray-100 flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">
+                        Reporting Queue
+                      </p>
 
-            <h2 className="text-3xl font-bold mb-8 text-blue-300">
-              Integrations
-            </h2>
+                      <h3 className="text-xl font-semibold">
+                        Monitoring Activity
+                      </h3>
+                    </div>
 
-            <p className="text-zinc-300 leading-relaxed mb-10 text-lg">
-              Servicing integrations, operational data workflows,
-              bankruptcy monitoring systems, and centralized
-              platform connectivity.
-            </p>
+                    <div className="w-10 h-10 rounded-2xl bg-gray-100" />
+                  </div>
 
-            <div className="space-y-10 text-zinc-300">
+                  <div className="p-6 space-y-4">
+                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
+                      <div className="flex justify-between mb-2">
+                        <p className="font-medium">Portfolio Reporting</p>
 
-              <div>
+                        <p className="text-gray-500">Active</p>
+                      </div>
 
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Integration Areas
-                </h3>
+                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-[82%] h-full bg-black rounded-full" />
+                      </div>
+                    </div>
 
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Servicing platform connectivity</li>
-                  <li>• Bankruptcy monitoring systems</li>
-                  <li>• Operational workflow integrations</li>
-                  <li>• Portfolio and account synchronization</li>
-                </ul>
+                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
+                      <div className="flex justify-between mb-2">
+                        <p className="font-medium">Monitoring Visibility</p>
 
+                        <p className="text-gray-500">Synced</p>
+                      </div>
+
+                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-[68%] h-full bg-black rounded-full" />
+                      </div>
+                    </div>
+
+                    <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
+                      <div className="flex justify-between mb-2">
+                        <p className="font-medium">Workflow Analytics</p>
+
+                        <p className="text-gray-500">Updated</p>
+                      </div>
+
+                      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-[90%] h-full bg-black rounded-full" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Data Workflows
-                </h3>
-
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Operational data coordination</li>
-                  <li>• Monitoring and activity updates</li>
-                  <li>• Workflow synchronization</li>
-                  <li>• Centralized operational visibility</li>
-                </ul>
-
-              </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Operational Value
-                </h3>
-
-                <p className="text-zinc-300 leading-relaxed">
-                  Improved operational coordination,
-                  centralized visibility, and streamlined
-                  workflow management across connected systems.
-                </p>
-
-              </div>
-
             </div>
           </div>
-
-          {/* COMPLIANCE */}
-          <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-12 shadow-2xl">
-
-            <h2 className="text-3xl font-bold mb-8 text-blue-300">
-              Compliance Workflows
-            </h2>
-
-            <p className="text-zinc-300 leading-relaxed mb-10 text-lg">
-              Workflow systems supporting reporting,
-              operational tracking, monitoring,
-              and compliance-oriented processes.
-            </p>
-
-            <div className="space-y-10 text-zinc-300">
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Workflow Areas
-                </h3>
-
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Compliance tracking workflows</li>
-                  <li>• Bankruptcy operational monitoring</li>
-                  <li>• Reporting coordination systems</li>
-                  <li>• Workflow activity visibility</li>
-                </ul>
-
-              </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Operational Processes
-                </h3>
-
-                <ul className="space-y-4 text-zinc-300 leading-relaxed">
-                  <li>• Workflow and task coordination</li>
-                  <li>• Operational monitoring systems</li>
-                  <li>• Activity tracking visibility</li>
-                  <li>• Centralized operational workflows</li>
-                </ul>
-
-              </div>
-
-              <div>
-
-                <h3 className="font-semibold mb-4 text-white text-lg">
-                  Operational Value
-                </h3>
-
-                <p className="text-zinc-300 leading-relaxed">
-                  Improved workflow consistency,
-                  centralized operational visibility,
-                  and stronger compliance-oriented
-                  operational coordination.
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
         </div>
-      </div>
+      </section>
     </main>
   );
 }
