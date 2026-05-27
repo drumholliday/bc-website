@@ -29,11 +29,11 @@ export default function Home() {
               Home
             </a>
 
-            <a
-              href="#why-bankruptcy-control"
-             className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+           <a
+              href="#operations"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Why Bankruptcy Control
+              Operations
             </a>
 
             <a href="#product"className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
@@ -114,13 +114,12 @@ export default function Home() {
             >
               Home
             </a>
-
             <a
-              href="#why-bankruptcy-control"
+              href="#operations"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
-              Why Bankruptcy Control
+              Operations
             </a>
 
             <a
@@ -279,84 +278,91 @@ export default function Home() {
       {/* Gradient Divide Blue to Gray */}
       {/* <div className="h-24 bg-gradient-to-b from-blue-900 to-gray-50" /> */}
 
-      {/* WHY */}
-      <motion.section
-        id="why-bankruptcy-control"
-        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-              Why Use Bankruptcy Control
-            </h2>
+      {/* OPERATIONS */}
+<motion.section
+  id="operations"
+  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+        Bankruptcy Operations
+      </h2>
 
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Managing bankruptcy accounts within your servicing platform
-              introduces risk and audit challenges. Bankruptcy plans often
-              conflict with standard loan requirements, making accurate tracking
-              difficult.
-            </p>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Bankruptcy Control is designed to support operational workflows,
+        portfolio visibility, compliance tracking, and centralized
+        bankruptcy account management across servicing environments.
+      </p>
+    </div>
 
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              Bankruptcy Control™ is purpose-built for bankruptcy case
-              management—tracking plan changes in real time and helping ensure
-              compliance with accounting and reporting standards.
-            </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {[
+        {
+          title: "Operational Visibility",
+          items: [
+            "Centralized bankruptcy account oversight",
+            "Real-time plan and case activity tracking",
+            "Portfolio-level monitoring workflows",
+            "Integrated operational reporting visibility",
+          ],
+        },
+        {
+          title: "Workflow Coordination",
+          items: [
+            "Task and work queue management",
+            "Servicing workflow support",
+            "Case assignment coordination",
+            "Cross-team operational visibility",
+          ],
+        },
+        {
+          title: "Compliance Operations",
+          items: [
+            "Support accounting and reporting workflows",
+            "Track plan changes and amendments",
+            "Monitor operational audit activity",
+            "Improve compliance visibility across portfolios",
+          ],
+        },
+        {
+          title: "Bankruptcy Monitoring",
+          items: [
+            "Track bankruptcy filings and updates",
+            "Monitor payment and plan activity",
+            "Support operational recovery workflows",
+            "Improve account-level visibility and control",
+          ],
+        },
+      ].map((section) => (
+        <div
+          key={section.title}
+          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200"
+        >
+          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
+            {section.title}
+          </h3>
 
-            <a
-              href="#contact"
-              className="inline-block bg-blue-900 text-white px-8 py-4 rounded font-semibold text-lg hover:bg-blue-800 transition"
-            >
-              Learn More →
-            </a>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-xl min-h-[420px] p-6 md:p-10 flex items-center justify-center">
-            <div className="w-full max-w-lg space-y-8">
-              {[
-                [
-                  "1",
-                  "Account Identified",
-                  "Bankruptcy filing detected and linked to account",
-                ],
-                [
-                  "2",
-                  "Plan Tracking",
-                  "Monitor plan changes and amendments in real time",
-                ],
-                [
-                  "3",
-                  "Compliance Maintained",
-                  "Ensure reporting aligns with accounting standards",
-                ],
-                [
-                  "✔",
-                  "Recovery Optimized",
-                  "Improve performance with better visibility and control",
-                ],
-              ].map(([step, title, text]) => (
-                <div key={title} className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center text-lg font-bold">
-                    {step}
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-xl text-gray-800 mb-2">
-                      {title}
-                    </p>
-
-                    <p className="text-gray-500 text-lg">{text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ul className="space-y-4">
+            {section.items.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-gray-700 text-lg"
+              >
+                <span className="text-green-500 mt-1">✔</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-      </motion.section>
+      ))}
+    </div>
+  </div>
+</motion.section>
 
       {/* Gradient Divide Gray to White */}
       <div className="h-20 bg-gradient-to-b from-gray-50 to-white" />
