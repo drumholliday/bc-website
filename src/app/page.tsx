@@ -40,6 +40,13 @@ export default function Home() {
               Product
             </a>
 
+            <a
+              href="#capabilities"
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Capabilities
+            </a>
+
             <a href="#about" className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
               About
             </a>
@@ -108,6 +115,14 @@ export default function Home() {
               className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
             >
               Product
+            </a>
+
+            <a
+              href="#capabilities"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded transition"
+            >
+              Capabilities
             </a>
 
             <a
@@ -330,7 +345,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
+              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-white">
                 A Complete Platform for Bankruptcy Case Management
               </h2>
 
@@ -389,6 +404,95 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+{/* Gradient Divide White to Gray */}
+<div className="h-16 bg-gradient-to-b from-white to-gray-50" />
+
+{/* PLATFORM CAPABILITIES */}
+<motion.section
+  id="capabilities"
+  className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+        Platform Capabilities
+      </h2>
+
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Bankruptcy Control combines bankruptcy workflow automation,
+        compliance management, reporting, and servicing integrations
+        into a centralized operational platform for creditors and
+        servicing organizations.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {[
+        {
+          title: "Connectivity",
+          items: [
+            "Servicing system integrations",
+            "Bankruptcy notification monitoring",
+            "Chapter 13 payment tracking",
+            "Court and docket data integration",
+          ],
+        },
+        {
+          title: "Compliance",
+          items: [
+            "Local court form support",
+            "Privacy data redaction controls",
+            "Audit and reporting visibility",
+            "Regulatory workflow support",
+          ],
+        },
+        {
+          title: "Counsel & Workflow",
+          items: [
+            "Local counsel coordination",
+            "Case assignment workflows",
+            "Work queue management",
+            "Document generation tools",
+          ],
+        },
+        {
+          title: "Reporting & Monitoring",
+          items: [
+            "Portfolio performance reporting",
+            "Payment monitoring",
+            "Compliance analytics",
+            "Operational visibility dashboards",
+          ],
+        },
+      ].map((section) => (
+        <div
+          key={section.title}
+          className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8"
+        >
+          <h3 className="text-2xl font-semibold mb-6 text-blue-900">
+            {section.title}
+          </h3>
+
+          <ul className="space-y-4">
+            {section.items.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-gray-700 text-lg"
+              >
+                <span className="text-green-500 mt-1">✔</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</motion.section>
 
       {/* Gradient Divide White to Gray */}
       <div className="h-16 bg-gradient-to-b from-white to-gray-50" />
@@ -565,7 +669,7 @@ export default function Home() {
       {/* CONTACT */}
       <motion.section
         id="contact"
-        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-gray-50"
+        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-blue-900 text-white"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -577,9 +681,10 @@ export default function Home() {
       Schedule a Demo
     </h2>
 
-    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      See how Bankruptcy Control can streamline bankruptcy operations,
-      improve compliance visibility, and support your servicing workflows.
+    <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+      Learn how Bankruptcy Control helps creditors and servicing organizations
+      improve operational visibility, strengthen compliance workflows, and
+      manage bankruptcy accounts more efficiently.
     </p>
   </div>
 
@@ -686,7 +791,7 @@ export default function Home() {
       </motion.section>
 
       {/* FOOTER */}
-      <footer className="text-center text-base md:text-xl text-blue-900 py-8 border-t">
+      <footer className="bg-blue-950 text-blue-100 text-center text-base md:text-lg py-8 border-t border-blue-800">
         © {new Date().getFullYear()} Bankruptcy & Litigation Technology, Inc.
       </footer>
     </main>
