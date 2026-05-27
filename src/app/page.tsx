@@ -270,119 +270,286 @@ export default function Home() {
       {/* PRODUCT */}
       <motion.section
         id="product"
-        className="scroll-mt-32 py-20 md:py-36 px-6 md:px-8 bg-white"
+        className="scroll-mt-32 py-28 md:py-40 px-6 md:px-8 bg-white"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+          {/* HEADER */}
+          <div className="text-center mb-24">
+            <p className="text-blue-700 font-semibold tracking-[0.18em] uppercase mb-5">
               Product Features
+            </p>
+
+            <h2 className="text-5xl md:text-7xl font-semibold tracking-tight text-gray-950 mb-8 leading-tight">
+              Built for Operational Control
             </h2>
 
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Bankruptcy Control provides centralized operational tools designed
-              to support bankruptcy workflows, monitoring, reporting,
-              integrations, and servicing coordination.
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Centralized tools that provide visibility, coordination, and
+              control across bankruptcy and servicing operations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {/* DOCUMENT GENERATION */}
+          {/* GRID */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* CARD 1 */}
             <a
               href="/document-generation"
-              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+              className="group relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#02102A] via-[#031B4E] to-[#010817] min-h-[460px] p-10 md:p-12 shadow-[0_30px_80px_rgba(2,6,23,0.20)] hover:shadow-[0_40px_100px_rgba(2,6,23,0.32)] hover:-translate-y-1 transition-all duration-700"
             >
-              <div className="h-40 bg-linear-to-br from-blue-950 to-blue-700" />
+              {/* BACKGROUND EFFECT */}
+              <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.25),transparent_45%)]" />
 
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                  Automated Document Generation
-                </h3>
+              {/* CONTENT */}
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                {/* TOP */}
+                <div className="flex items-start justify-between gap-10">
+                  {/* LEFT TEXT */}
+                  <div className="max-w-md">
+                    <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-medium mb-6">
+                      Workflow Automation
+                    </p>
 
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Generate operational bankruptcy-related documents, workflow
-                  notices, and reporting materials through centralized workflow
-                  systems.
-                </p>
+                    <h3 className="text-4xl font-semibold text-white leading-tight mb-6">
+                      Automated Document Generation
+                    </h3>
 
-                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-                  Learn More →
-                </p>
+                    <p className="text-zinc-300 text-xl leading-relaxed">
+                      Generate operational bankruptcy-related documents,
+                      workflow notices, and reporting materials through
+                      centralized workflow systems.
+                    </p>
+                  </div>
+
+                  {/* RIGHT GRID */}
+                  <div className="grid grid-cols-2 gap-4 shrink-0">
+                    <div className="w-28 h-28 rounded-[28px] border border-blue-400/40 bg-blue-500/20 shadow-[0_0_40px_rgba(96,165,250,0.55)] backdrop-blur-xl flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11 text-blue-200"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.7}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12h6m-6 4h6M7 4h7l5 5v11a1 1 0 01-1 1H7a1 1 0 01-1-1V5a1 1 0 011-1z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+                  </div>
+                </div>
+
+                {/* BOTTOM */}
+                <div className="flex items-center justify-between pt-14">
+                  <span className="text-blue-300 text-xl font-medium">
+                    Learn More
+                  </span>
+
+                  <span className="text-blue-300 text-3xl transition-transform duration-500 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
               </div>
             </a>
 
-            {/* BANKRUPTCY TRACKING */}
+            {/* CARD 2 */}
             <a
               href="/bankruptcy-tracking"
-              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+              className="group relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#02102A] via-[#031B4E] to-[#010817] min-h-[460px] p-10 md:p-12 shadow-[0_30px_80px_rgba(2,6,23,0.20)] hover:shadow-[0_40px_100px_rgba(2,6,23,0.32)] hover:-translate-y-1 transition-all duration-700"
             >
-              <div className="h-40 bg-linear-to-br from-blue-700 to-blue-950" />
+              <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.25),transparent_45%)]" />
 
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                  Real-Time Bankruptcy Tracking
-                </h3>
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div className="flex items-start justify-between gap-10">
+                  <div className="max-w-md">
+                    <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-medium mb-6">
+                      Monitoring Systems
+                    </p>
 
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Monitor bankruptcy activity, account updates, operational
-                  changes, and servicing workflows through centralized
-                  visibility systems.
-                </p>
+                    <h3 className="text-4xl font-semibold text-white leading-tight mb-6">
+                      Real-Time Bankruptcy Tracking
+                    </h3>
 
-                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-                  Learn More →
-                </p>
+                    <p className="text-zinc-300 text-xl leading-relaxed">
+                      Monitor bankruptcy activity, operational changes,
+                      servicing workflows, and account visibility through
+                      centralized monitoring systems.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 shrink-0">
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-blue-400/40 bg-blue-500/20 shadow-[0_0_40px_rgba(96,165,250,0.55)] backdrop-blur-xl flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11 text-blue-200"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.7}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 17v-2m3 2V7m3 10v-4m3 6H3"
+                        />
+                      </svg>
+                    </div>
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-14">
+                  <span className="text-blue-300 text-xl font-medium">
+                    Learn More
+                  </span>
+
+                  <span className="text-blue-300 text-3xl transition-transform duration-500 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
               </div>
             </a>
 
-            {/* INTEGRATIONS */}
+            {/* CARD 3 */}
             <a
               href="/integrations"
-              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+              className="group relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#02102A] via-[#031B4E] to-[#010817] min-h-[460px] p-10 md:p-12 shadow-[0_30px_80px_rgba(2,6,23,0.20)] hover:shadow-[0_40px_100px_rgba(2,6,23,0.32)] hover:-translate-y-1 transition-all duration-700"
             >
-              <div className="h-40 bg-linear-to-br from-blue-800 to-blue-950" />
+              <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.25),transparent_45%)]" />
 
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                  System Integrations
-                </h3>
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div className="flex items-start justify-between gap-10">
+                  <div className="max-w-md">
+                    <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-medium mb-6">
+                      Platform Connectivity
+                    </p>
 
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Connect operational workflows, monitoring systems, servicing
-                  platforms, and centralized reporting through integrated
-                  platform architecture.
-                </p>
+                    <h3 className="text-4xl font-semibold text-white leading-tight mb-6">
+                      System Integrations
+                    </h3>
 
-                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-                  Learn More →
-                </p>
+                    <p className="text-zinc-300 text-xl leading-relaxed">
+                      Connect operational workflows, monitoring systems,
+                      servicing platforms, and centralized reporting through
+                      integrated platform architecture.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 shrink-0">
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-blue-400/40 bg-blue-500/20 shadow-[0_0_40px_rgba(96,165,250,0.55)] backdrop-blur-xl flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11 text-blue-200"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.7}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.828 10.172a4 4 0 010 5.656l-1.414 1.414a4 4 0 01-5.656-5.656l1.414-1.414m3.536-3.536a4 4 0 015.656 5.656l-1.414 1.414"
+                        />
+                      </svg>
+                    </div>
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-14">
+                  <span className="text-blue-300 text-xl font-medium">
+                    Learn More
+                  </span>
+
+                  <span className="text-blue-300 text-3xl transition-transform duration-500 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
               </div>
             </a>
 
-            {/* WORKFLOW MANAGEMENT */}
+            {/* CARD 4 */}
             <a
               href="/workflow-management"
-              className="group block rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+              className="group relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#02102A] via-[#031B4E] to-[#010817] min-h-[460px] p-10 md:p-12 shadow-[0_30px_80px_rgba(2,6,23,0.20)] hover:shadow-[0_40px_100px_rgba(2,6,23,0.32)] hover:-translate-y-1 transition-all duration-700"
             >
-              <div className="h-40 bg-linear-to-br from-blue-900 to-blue-700" />
+              <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.25),transparent_45%)]" />
 
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                  Workflow Management
-                </h3>
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div className="flex items-start justify-between gap-10">
+                  <div className="max-w-md">
+                    <p className="text-blue-300 uppercase tracking-[0.18em] text-sm font-medium mb-6">
+                      Operational Coordination
+                    </p>
 
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  Coordinate operational tasks, monitoring activity, reporting
-                  workflows, and centralized servicing operations across account
-                  portfolios.
-                </p>
+                    <h3 className="text-4xl font-semibold text-white leading-tight mb-6">
+                      Workflow Management
+                    </h3>
 
-                <p className="mt-6 text-blue-700 font-medium group-hover:translate-x-1 transition">
-                  Learn More →
-                </p>
+                    <p className="text-zinc-300 text-xl leading-relaxed">
+                      Coordinate operational tasks, monitoring activity,
+                      reporting workflows, and centralized servicing operations
+                      across account portfolios.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 shrink-0">
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl" />
+
+                    <div className="w-28 h-28 rounded-[28px] border border-blue-400/40 bg-blue-500/20 shadow-[0_0_40px_rgba(96,165,250,0.55)] backdrop-blur-xl flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11 text-blue-200"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.7}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 7h6v6H3V7zm12 0h6v6h-6V7zM3 17h6v4H3v-4zm12 0h6v4h-6v-4z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-14">
+                  <span className="text-blue-300 text-xl font-medium">
+                    Learn More
+                  </span>
+
+                  <span className="text-blue-300 text-3xl transition-transform duration-500 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
               </div>
             </a>
           </div>
