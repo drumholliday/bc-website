@@ -112,7 +112,7 @@ export default function OperationsPage() {
           <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
             {/* LEFT */}
             <div>
-              <p className="text-yellow-400 uppercase tracking-[0.16em] text-sm font-medium mb-6">
+              <p className="text-yellow-400 uppercase tracking-[0.16em] text-xl font-medium mb-6">
                 Overview
               </p>
 
@@ -122,13 +122,13 @@ export default function OperationsPage() {
                 Unified visibility.
               </h2>
 
-              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed mb-8">
+              <p className="text-zinc-400 text-xl md:text-xl leading-relaxed mb-8">
                 Our platform unifies people, processes, and operational systems
                 across servicing functions. From intake to resolution, every
                 action is tracked, monitored, and optimized in real time.
               </p>
 
-              <div className="space-y-4 text-zinc-300 text-lg">
+              <div className="space-y-4 text-zinc-300 text-xl">
                 <div>✓ Centralized operational workflows</div>
                 <div>✓ Real-time monitoring systems</div>
                 <div>✓ Scalable servicing coordination</div>
@@ -153,7 +153,7 @@ export default function OperationsPage() {
       {/* CAPABILITIES */}
       <section className="bg-[#050816] border-b border-white/5">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20">
-          <p className="text-yellow-400 uppercase tracking-[0.16em] text-sm font-medium mb-10">
+          <p className="text-yellow-400 uppercase tracking-[0.16em] text-xl font-medium mb-10">
             Core Operational Capabilities
           </p>
 
@@ -199,7 +199,7 @@ export default function OperationsPage() {
           <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
             {/* LEFT */}
             <div>
-              <p className="text-yellow-700 uppercase tracking-[0.16em] text-sm font-medium mb-6">
+              <p className="text-yellow-700 uppercase tracking-[0.16em] text-xl font-medium mb-6">
                 Built for Complexity
               </p>
 
@@ -213,7 +213,7 @@ export default function OperationsPage() {
                 enterprise scale.
               </p>
 
-              <div className="space-y-4 text-lg text-zinc-700">
+              <div className="space-y-4 text-xl text-zinc-700">
                 <div>✓ Scalable infrastructure</div>
                 <div>✓ High-volume performance</div>
                 <div>✓ Configurable to your processes</div>
@@ -247,7 +247,7 @@ export default function OperationsPage() {
                   Transform the way you manage operations.
                 </h3>
 
-                <p className="text-zinc-400 text-lg">
+                <p className="text-zinc-400 text-xl">
                   See how Bankruptcy Control can streamline your servicing
                   operations.
                 </p>

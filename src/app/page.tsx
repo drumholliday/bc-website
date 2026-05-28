@@ -737,27 +737,27 @@ export default function Home() {
             {/* RIGHT */}
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
               {[
-                {
-                  title: "Financial Services",
-                  subtitle: "Banks & Lenders",
-                  href: "/servicers",
-                },
-                {
-                  title: "Servicers",
-                  subtitle: "Loan Servicers",
-                  href: "/servicers",
-                },
-                {
-                  title: "Legal & Trustees",
-                  subtitle: "Attorneys & Trustees",
-                  href: "/counsel",
-                },
-                {
-                  title: "Government",
-                  subtitle: "Government Agencies",
-                  href: "/creditors",
-                },
-              ].map((item) => (
+                  {
+                    title: "Financial Institutions",
+                    subtitle: "Banks & Creditors",
+                    href: "/creditors",
+                  },
+                  {
+                    title: "Loan Servicing",
+                    subtitle: "Servicing Operations",
+                    href: "/servicers",
+                  },
+                  {
+                    title: "Legal Operations",
+                    subtitle: "Counsel & Trustees",
+                    href: "/counsel",
+                  },
+                  {
+                    title: "Recovery Operations",
+                    subtitle: "Collections & Resolution",
+                    href: "/collections",
+                  },
+                ].map((item) => (
                 <a
                   key={item.title}
                   href={item.href}
