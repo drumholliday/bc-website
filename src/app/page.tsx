@@ -204,6 +204,11 @@ export default function Home() {
               for Creditors & Servicers
             </h1>
 
+            {/* <p className="text-2xl md:text-4xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+              Bankruptcy monitoring tells you something happened. Bankruptcy Control helps you teams 
+              manage what happens next.  
+            </p> */}
+
             <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
               Track bankruptcy plans, maintain compliance, and improve recovery
               with a platform built specifically for creditors.
